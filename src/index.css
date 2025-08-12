@@ -1,0 +1,19 @@
+@import "@flaticon/flaticon-uicons/css/all/all";
+
+@import "tailwindcss";
+
+@import "../node_modules/preline/variants.css";
+
+.curved-clip {
+    clip-path: ellipse(100% 100% at 50% 0%);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url('/images/home/Herosec.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

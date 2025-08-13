@@ -79,7 +79,7 @@ function About() {
                         <div className="bg-[#4AF8BA] p-3 rounded-full w-fit"> </div>
                         <h1 className="md:text-2xl text-xl font-semibold">Our Mission</h1>
                     </div>
-                    <div className="max-w-4xl mx-auto text-gray-700   leading-relaxed space-y-6 md:text-base text-sm">
+                    <div className="max-w-4xl mx-auto text-gray-700  md:mb-10 mb-6 leading-relaxed space-y-6 md:text-base text-sm">
                         <p className='md:text-lg text-justify'>
                             At the <strong> International Conference on Smart Computational Methods and Emerging Applications </strong>, our mission is to advance innovation,  foster collaboration, and bridge the gap  between theory and real-world solutions in the field of computational intelligence.
                         </p>

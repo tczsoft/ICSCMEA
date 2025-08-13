@@ -24,7 +24,7 @@ function Contact() {
     return (
         <>
             <section className='bg-white/96'>
-                <section className="relative h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D]" >
+                <section className="relative md:h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D]" >
                     <img className="absolute -top-20 -left-20 2xl:block hidden" src="/assets/Images/point.png" alt="" />
                     <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/assets/Images/Herosec.png')] opacity-20" ></div>
                 </section>
@@ -32,12 +32,12 @@ function Contact() {
                     <section className="max-w-[90rem] relative  mx-auto lg:px-5">
                         <div className="lg:p-20 p-10 bg-[#4AF8BA] w-fit rounded-b-full absolute -top-5 rounded-tr-4xl xl:block hidden">
                             <p className="text-center w-fit rounded-full font-semibold lg:text-3xl text-lg">Contact</p>
-                            <div className="p-2.5 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-5"> </div>
+                                <div className="p-2.5 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-5"> </div>
                             <div className="p-2.5 z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-4.5"> </div>
                         </div>
                     </section>
                 </section>
-                <section className=''>  <div className="flex flex-col items-center py-10">
+                <section className='md:mt-0 mt-10  '>  <div className="flex flex-col items-center py-10">
                     <div className="grid md:grid-cols-1 gap-5 grid-cols-1 px-6 w-full max-w-[40rem]">
                         <div className="flex flex-col gap-4 md:gap-6 md:px-9  p-4 md:p-8 rounded-lg shadow-lg w-full bg-white border-[#FEDE68]">
                             <h1 className="md:text-xl text-lg font-extrabold text-[#033F2E] text-center">Get in Touch</h1>

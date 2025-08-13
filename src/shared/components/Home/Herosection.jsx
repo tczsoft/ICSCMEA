@@ -44,11 +44,12 @@ export const Herosection = () => {
               <div className=" ">
                 <Link to="/paper-submission">
                   <button className=" border border-[#4AF8BA] px-6 py-3 rounded-full  text-white cursor-pointer">
-                    Register Now
+                      Register Now
                   </button>
                 </Link>
               </div>
             </div>
+            <img src="public/images/home/pages.jpg" className="rounded-xl 2xl:block hidden" alt="" />
           </div>
         </div>
       </section>

@@ -62,28 +62,28 @@ function Editorial() {
     const highlights = [
 
         {
-            title: "Jay Sarraf",
-            description: "KIIT University, India ",
+            title: "A.V.L.N. Sujith",
+            description: "Department of Computer Science and Engineering, JNTUA University, India",
         },
         {
-            title: "Jay Sarraf",
-            description: "KIIT University, India ",
+            title: "Hung Nguyen",
+            description: "Department of Information Technology, Nha Trang university, Vietnam",
         },
         {
-            title: "Jay Sarraf",
-            description: "KIIT University, India ",
+            title: "Tusar Kanti Dash",
+            description: "Department of Electronics and Communication Engineering, C V Raman Global University, India",
         },
         {
-            title: "Jay Sarraf",
-            description: "KIIT University, India ",
+            title: "D. Angeline Benitta",
+            description: "Department of Computer Applications, Hindustan Institute of Technology and Science, India",
         },
         {
-            title: "Jay Sarraf",
-            description: "KIIT University, India ",
+            title: "Samir Hallaci",
+            description: "Department of Computer Science, Guelma University, Algeria",
         },
         {
-            title: "Jay Sarraf",
-            description: "KIIT University, India ",
+            title: "P. Rajesh",
+            description: "Department of Computer Science and Engineering, Institute of Science and Technolog, India",
         },
     ];
     return (
@@ -122,7 +122,7 @@ function Editorial() {
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4">
                                 {highlights.map((item, index) => (
                                     <div key={index} className="bg-white shadow-lg rounded-lg p-6 border-t-4 border-green-600 hover:scale-105 transition-transform duration-300">
-                                        <h3 className="md:text-xl text-lg font-semibold text-[#033D2D] mb-2">{item.title}</h3>
+                                        <h3 className="md:text-xl text-lg font-semibold text-[#033D2D] mb-2">Dr. {item.title}</h3>
                                         <p className="text-gray-600 md:text-base text-sm">{item.description}</p>
                                     </div>
                                 ))}

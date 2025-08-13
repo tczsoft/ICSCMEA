@@ -83,7 +83,7 @@ const Header = () => {
   return (
     <>
       <section className="bg-primary">
-        <div className="max-w-[80rem] mx-auto md:px-5 px-3 md:py-0 py-2 bg-gradient-to-r from-[#0D6743] to-[#033D2D]  ">
+        <div className="max-w-[80rem] mx-auto md:px-5 px-3 md:py-0 py-4 bg-gradient-to-r from-[#0D6743] to-[#033D2D]  ">
           <div className="flex items-center justify-between lg:gap-0  gap-5  ">
             <Link to='/'>
               <div className="md:hidden block   ">

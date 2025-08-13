@@ -29,7 +29,7 @@ export default function Approuter() {
                         <Route path='/contact' element={<ContactPage />} />
                     </Route>
                 </Routes>
-                <PrelineScript />
+                <PrelineScript />   
             </BrowserRouter>
         </>
     )

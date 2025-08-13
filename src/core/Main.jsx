@@ -51,7 +51,7 @@ const Main = () => {
   };
   return (
     <>
-      <div ref={headerRef} className="  fixed top-0  w-full  z-50">
+      <div ref={headerRef} className="  fixed top-0  w-full  z-[999]">
         <Header />
       </div>
       <main ref={mainRef}>

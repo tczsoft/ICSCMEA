@@ -89,11 +89,11 @@ function Editorial() {
     return (
         <>
             <section className='bg-white/96'>
-                <section className="relative h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D]" >
+                <section className="relative h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D] lg:block hidden" >
                     <img className="absolute -top-20 -left-20 2xl:block hidden" src="/assets/Images/point.png" alt="" />
                     <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/assets/Images/Herosec.png')] opacity-20" ></div>
                 </section>
-                <section className="">
+                <section className="lg:pt-0 pt-16">
                     <section className="max-w-[90rem] relative  mx-auto lg:px-5">
                         <div className="lg:p-20 p-10 bg-[#4AF8BA] w-fit rounded-b-full absolute -top-5 rounded-tr-4xl xl:block hidden">
                             <p className="text-center w-fit rounded-full font-semibold lg:text-3xl text-lg">Editorial</p>

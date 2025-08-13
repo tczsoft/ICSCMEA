@@ -58,7 +58,7 @@ const Header = () => {
           label: "Conference tracks",
         },
         {
-          to: "/key-dates",
+          to: "/dates",
           label: "Key Dates",
         },
         {
@@ -90,13 +90,21 @@ const Header = () => {
                 <div className=" font-bold md:hidden block text-white text-2xl">ICSCMEA</div>
               </div>
             </Link>
-            <div className={`md:hidden block  ${menuOpen ? "z-50" : ""}`}>
-              <Hamburger toggled={menuOpen} color="#fff" toggle={setMenuOpen} />
+            <div className={`md:hidden block cursor-pointer ${menuOpen ? "z-50" : ""}`} onClick={() => setMenuOpen(!menuOpen)}   >
+              {menuOpen ? (
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}    >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}   >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
             </div>
           </div>
         </div>
       </section>
-      <section className={` fixed -top-1 right-0 h-full w-64 z-40 bg-transparent ${scrolled || !isHomePage ? "bg-gradient-to-r from-[#0D6743] to-[#033D2D]" : " "}  ${menuOpen ? "translate-x-0 duration-300" : "translate-x-full duration-300"} md:block md:relative md:w-auto md:translate-x-0`} >
+      <section className={` fixed -top-1 right-0 h-full w-64 z-40 md:bg-transparent bg-[#033D2D] ${scrolled || !isHomePage ? "bg-gradient-to-r from-[#0D6743] to-[#033D2D]" : " "}  ${menuOpen ? "translate-x-0 duration-300" : "translate-x-full duration-300"} md:block md:relative md:w-auto md:translate-x-0`} >
         <header className="max-w-[90rem] mx-auto md:px-5 px-2 h-full py-1 ">
           <div className="flex md:justify-between justify-center items-center ">
             <Link to='/'>

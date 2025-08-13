@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 function LastSection() {
     return (
         <>
-            <section className="w-full bg-[url('/assets/Images/footer.jpg')] md:py-20 py-10 bg-cover flex justify-center items-center">
-                <div className=" max-w-[90rem]  mx-auto md:px-5 px-3 ">
+            <section className="w-full bg-[url('/images/home/final-selection.png')] md:py-10 py-10  bg-center  bg-cover flex justify-center items-center">
+                <div className=" max-w-[90rem]  mx-auto md:px-5 px-3 pt-3 ">
                     <section className=" flex flex-col gap-10 ">
                         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 items-center text-white '>
                             <div className="bg-[#033D2D] md:p-10 p-5 w-full h-full transform  flex items-center justify-center rounded-xl relative">

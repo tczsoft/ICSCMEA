@@ -6,7 +6,7 @@ import LastSection from '../Bottom/Bottom';
 function Scope() {
     const highlights = [
         {
-            title: "Foster Innovation ",
+            title: "Foster Innovation",
             description: "Promote creative and cutting-edge research in smart computational methods.",
         },
         {
@@ -29,15 +29,27 @@ function Scope() {
             title: "Drive Technological Progress",
             description: "Highlight emerging trends that shape the future of science and technology.",
         },
+        {
+            title: "Promote Interdisciplinary Approaches",
+            description: "Encourage integration of diverse fields to achieve breakthrough solutions.",
+        },
+        {
+            title: "Support Sustainable Development",
+            description: "Champion technologies and applications that contribute to a sustainable future.",
+        },
+        {
+            title: "Advance Ethical AI and Technology",
+            description: "Promote responsible and ethical development of computational innovations.",
+        },
     ];
     return (
         <>
             <section className='bg-white/96'>
-                <section className="relative h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D]" >
+                <section className="relative h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D] lg:block hidden" >
                     <img className="absolute -top-20 -left-20 2xl:block hidden" src="/assets/Images/point.png" alt="" />
                     <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/assets/Images/Herosec.png')] opacity-20" ></div>
                 </section>
-                <section className="">
+                <section className="lg:pt-0 pt-16">
                     <section className="max-w-[90rem] relative  mx-auto lg:px-5">
                         <div className="lg:p-20 p-10 bg-[#4AF8BA] w-fit rounded-b-full absolute -top-5 rounded-tr-4xl xl:block hidden">
                             <p className="text-center w-fit rounded-full font-semibold lg:text-3xl text-lg">Scope</p>
@@ -49,7 +61,7 @@ function Scope() {
                             <div className='col-span-1 xl:block hidden'>  </div>
                             <div className='flex flex-col md:gap-4 gap-2 col-span-4 md:my-10 my-5'>
                                 <div className="text-justify md:text-lg text-sm leading-7 flex flex-col gap-4">
-                                    <p className="px-3">The International Conference on Smart Computational Methods and Emerging Applications (ICSCMEA 2025) is a prestigious global forum designed to advance the frontiers of intelligent computational technologies and their real-world implementations. Set against the backdrop of rapid technological evolution, this conference offers a vital platform for scholars, engineers, scientists, technocrats, and industry professionals to share their pioneering ideas, research outcomes, and experiences. </p>
+                                    <p className="px-3">ICSCMEA 2025 covers innovations in intelligent computational methods and their applications across AI, machine learning, data analytics, cloud computing, high-performance computing, and emerging interdisciplinary fields. The conference provides a platform for researchers and industry experts to exchange ideas, address challenges, and explore future trends. </p>
                                 </div>
                             </div>
                         </section>

@@ -19,28 +19,28 @@ export const Herosection = () => {
     { text: "Interdisciplinary Innovations", Icon: RiTeamLine },
   ];
   const date = [
-    { Dates: '22-07-2025', Title: 'Full Paper Submission Deadline' },
+    { Dates: '22-07-2025', Title: 'Submission Deadline' },
     { Dates: '29-07-2025', Title: 'Notification of Decision' },
-    { Dates: '05-08-2025', Title: 'Deadline for Submitting Revised Full Paper' },
+    { Dates: '05-08-2025', Title: 'Submitting Revised Full Paper' },
     { Dates: '12-08-2025', Title: 'Notification of Acceptance' },
     { Dates: '19-08-2025', Title: 'Camera-Ready Paper Submission' },
-    { Dates: '26-08-2025', Title: 'Last Date for Registration / Payment' },
+    { Dates: '26-08-2025', Title: 'Last Date for Registration' },
   ];
   return (
     <>
       <section className="relative lg:h-[calc(100dvh-30px)] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D]  " >
         <img className="absolute -top-20 -left-20 2xl:block hidden" src="/images/home/point.png" alt="" />
-        <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/images/home/Herosec.png')] opacity-20" ></div>
-        <div className="py-20 flex  flex-col justify-center   2xl:gap-20 xl:gap-10 gap-5 h-full">
+        <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/images/home/Herosec.png')] opacity-20 bg-fixed"></div>
+        <div className="py-20 flex flex-col justify-center 2xl:gap-20 xl:gap-10 gap-5 h-full">
           <div className="relative md:py-5 py-3 bg-[#4AF8BA] 2xl:w-1/2 w-3/4 rounded-tr-full rounded-br-full">
             <Marquee pauseOnHover>
               <p className=" text-black overflow-hidden  font-bold md:text-xl uppercase">International Conference on Smart Computational Methods and Emerging Applications <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  Intelligent Systems <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  Advanced Algorithms <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span> AI & Emerging Tech <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  Global Innovations  <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  </p>
             </Marquee>
           </div>
           <div className="relative z-10 grid grid-cols-1 2xl:grid-cols-2 max-w-[90rem] gap-10 lg:py-0 py-10 mx-auto items-center px-4">
-            <div className=" lg:ml-auto mx-auto flex flex-col gap-6 ">
-              <h1 className="text-2xl xl:text-5xl lg:text-3xl font-bold leading-snug text-left  text-white">
-                International Conference on Smart Computational Methods and Emerging Applications   </h1>
+            <div className=" lg:ml-auto mx-auto flex flex-col gap-6">
+              <h1 className="text-2xl xl:text-5xl lg:text-3xl font-bold leading-snug text-left text-white">
+                International Conference on Smart Computational Methods and Emerging Applications</h1>
               <div className=" ">
                 <Link to="/paper-submission">
                   <button className=" border border-[#4AF8BA] px-6 py-3 rounded-full  text-white cursor-pointer">
@@ -60,23 +60,21 @@ export const Herosection = () => {
             <div className="p-2.5  z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-4.5">
             </div>
           </div>
-          <section className="grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-3 items-center  ">
+          <section className="grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-3 items-center">
             <div className="z-10">
-              <img src="/images/home/aboutsection.png" className="md:w-[500px] w-[200px] md:mx-0 mx-auto " alt="" />
+              <img src="/images/home/aboutsection.png" className="md:w-[500px] w-[200px] md:mx-0 mx-auto" alt="" />
             </div>
-            <div className='flex flex-col md:gap-4 gap-2 lg:my-0'>
+            <div className='flex flex-col md:gap-4 gap-2 lg:my-0 my-5'>
               <div className="flex gap-3 justify-center items-center">
                 <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">
                 </div>
-                <h1 className="text-center w-fit rounded-full font-semibold lg:text-3xl text-lg">
-                  About
-                </h1>
+                <h1 className="text-center w-fit rounded-full font-semibold lg:text-3xl text-lg">About</h1>
               </div>
               <div className="text-justify lg:text-lg md:text-base text-sm leading-7 flex flex-col gap-4">
                 <p className="">
-                  The International Conference on Smart Computational Methods and Emerging Applications (ICSCMEA) serves as a premier interdisciplinary platform for scholars, researchers, practitioners, and educators to present and discuss the latest innovations, trends, and challenges in the field of intelligent computational systems and their transformative applications.
+                  The International Conference on Smart Computational Methods and Emerging Applications serves as a premier interdisciplinary platform for scholars, researchers, practitioners, and educators to present and discuss the latest innovations, trends, and challenges in the field of intelligent computational systems and their transformative applications.
                 </p>
-                <p className=""> ICSCMEA 2025 aims to bring together leading minds from academia, industry, and government to exchange knowledge on the advancement of computational intelligence, data-driven methodologies, and next-generation technologies. The conference fosters collaboration across disciplines including Artificial Intelligence, Machine Learning, Data Science, Cyber-Physical Systems, Internet of Things (IoT), Quantum Computing, Robotics, Cloud and Edge Computing, and many more.
+                <p className="">ICSCMEA 2025 aims to bring together leading minds from academia, industry, and government to exchange knowledge on the advancement of computational intelligence, data-driven methodologies, and next-generation technologies. The conference fosters collaboration across disciplines including Artificial Intelligence, Machine Learning, Data Science, Cyber-Physical Systems, Internet of Things (IoT), Quantum Computing, Robotics, Cloud and Edge Computing, and many more.
                 </p>
               </div>
               <div className="md:mx-0 mx-auto">
@@ -91,7 +89,7 @@ export const Herosection = () => {
         </section>
       </section>
       <section className="bg-white/96 py-10">
-        <section className="  max-w-[90rem] mx-auto md:px-5 px-3 flex flex-col gap-5">
+        <section className="max-w-[90rem] mx-auto md:px-5 px-3 flex flex-col gap-5">
           <div className="flex gap-3 justify-center items-center">
             <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">
             </div>
@@ -105,14 +103,11 @@ export const Herosection = () => {
             </div>
             <div className="flex flex-col gap-4 md:col-span-3">
               <p className="text-justify md:text-lg">The International Conference on Smart Computational Methods and Emerging Applications aims to provide a global platform for researchers, academicians, industry experts, and innovators to exchange knowledge, share advancements, and explore novel trends in computational intelligence and its real-world applications. The conference will focus on cutting-edge computational methods and their integration into diverse domains to address complex challenges and enable transformative innovations.</p>
-              {/* <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
-                {scopeHeadings.map((heading, index) => (<p key={index} className="font-medium border-1 text-center border-[#033D2D] rounded-lg p-4"> {heading} </p>))}
-              </div> */}
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {scopeHeadings.map(({ text, Icon }, index) => (
-              <div key={index} className="font-medium border border-[#033D2D] rounded-lg p-4 flex flex-col items-center justify-center gap-3 text-center hover:shadow-md transition"  >
+              <div key={index} className="font-medium rounded-lg p-4 flex flex-col items-center justify-center gap-3 text-center shadow-md transition"  >
                 <Icon className="w-8 h-8 text-[#033D2D]" />
                 <p>{text}</p>
               </div>

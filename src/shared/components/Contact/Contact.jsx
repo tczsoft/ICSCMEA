@@ -17,24 +17,10 @@ function Contact() {
             formDataToSend.append('email', formData.email);
             formDataToSend.append('number', formData.number);
             formDataToSend.append('message', formData.message);
-            const response = await fetch('http://192.168.1.30:5173/ICSCME/message_mail.php', { method: 'POST', body: formDataToSend, });
-            if (response.ok) {
-                const result = await response.text();
-                setStatus(result);
-                setFormData({ firstname: '', email: '', number: '', message: '', });
-                toast.success("submitted successfully!");
-                console.log("success")
-            } else {
-                setStatus('Failed to send submission. Please try again.');
-                toast.error('Failed to send submission. Please try again.');
-            }
-        } catch (error) {
-            console.error('Error:', error);
-            setStatus('An error occurred. Please try again.');
-            toast.error('An error occurred. Please try again.');
-        }
+            const response = await fetch('http://192.168.1.30/ICSCME/message_mail.php', { method: 'POST', body: formDataToSend, });
+            if (response.ok) { const result = await response.text(); setStatus(result); setFormData({ firstname: '', email: '', number: '', message: '', }); toast.success("submitted successfully!"); console.log("success") } else { setStatus('Failed to send submission. Please try again.'); toast.error('Failed to send submission. Please try again.'); }
+        } catch (error) { console.error('Error:', error); setStatus('An error occurred. Please try again.'); toast.error('An error occurred. Please try again.'); }
     };
-
     return (
         <>
             <section className='bg-white/96'>
@@ -53,26 +39,26 @@ function Contact() {
                 </section>
                 <section className=''>  <div className="flex flex-col items-center py-10">
                     <div className="grid md:grid-cols-1 gap-5 grid-cols-1 px-6 w-full max-w-[40rem]">
-                        <div className="flex flex-col gap-4 md:gap-6 md:px-9  p-4 md:p-8 rounded-lg shadow-lg w-full  bg-white border-[#FEDE68]">
-                            <h1 className="md:text-xl text-lg font-extrabold text-black text-center">Get in Touch</h1>
+                        <div className="flex flex-col gap-4 md:gap-6 md:px-9  p-4 md:p-8 rounded-lg shadow-lg w-full bg-white border-[#FEDE68]">
+                            <h1 className="md:text-xl text-lg font-extrabold text-[#033F2E] text-center">Get in Touch</h1>
                             <form className="space-y-4" onSubmit={handleSubmit}>
                                 <div className='flex flex-col gap-2'>
-                                    <label className='font-semibold' htmlFor="firstname">First Name *</label>
-                                    <input type="text" name="firstname" id="firstname" value={formData.firstname} onChange={handleChange} placeholder="Enter your name" className="w-full h-12 p-2 text-lg  bg-white rounded-lg border border-gray-400   focus:outline-none focus:ring-2 focus:ring-blue-600" required />
+                                    <label className='font-semibold text-[#03402E]' htmlFor="firstname">First Name *</label>
+                                    <input type="text" name="firstname" id="firstname" value={formData.firstname} onChange={handleChange} placeholder="Enter your name" className="w-full h-12 p-2 text-lg  bg-white rounded-lg border-b-2 focus:outline-none border-[#00A63E]" required />
                                 </div>
                                 <div className='flex flex-col gap-2'>
-                                    <label className='font-semibold' htmlFor="email">Email *</label>
-                                    <input type="email" name="email" id="email" value={formData.email} onChange={handleChange} placeholder="Enter your email" className="w-full h-12 p-2 text-lg border rounded-lg  bg-white  border-gray-400   focus:outline-none focus:ring-2 focus:ring-blue-600" required />
+                                    <label className='font-semibold text-[#03402E]' htmlFor="email">Email *</label>
+                                    <input type="email" name="email" id="email" value={formData.email} onChange={handleChange} placeholder="Enter your email" className="w-full h-12 p-2 text-lg border-b-2 rounded-lg  bg-white  border-[#00A63E]   focus:outline-none" required />
                                 </div>
                                 <div className='flex flex-col gap-2'>
-                                    <label className='font-semibold' htmlFor="number">Number *</label>
-                                    <input type="text" name="number" id="number" onChange={handleChange} value={formData.number} placeholder="Enter your number" className="w-full h-12 p-2 text-lg border rounded-lg bg-white  border-gray-400   focus:outline-none focus:ring-2 focus:ring-blue-600" required />
+                                    <label className='font-semibold text-[#03402E]' htmlFor="number">Number *</label>
+                                    <input type="text" name="number" id="number" onChange={handleChange} value={formData.number} placeholder="Enter your number" className="w-full h-12 p-2 text-lg border-b-2 rounded-lg bg-white  border-[#00A63E]   focus:outline-none" required />
                                 </div>
                                 <div className='flex flex-col gap-2'>
-                                    <label className='font-semibold' htmlFor="message">Message *</label>
-                                    <textarea name="message" id='message' value={formData.message} onChange={handleChange} placeholder="Enter your message"  className="w-full h-40 p-4 text-lg border rounded-lg  bg-white border-gray-400   resize-none focus:outline-none focus:ring-2 focus:ring-blue-600" required   ></textarea>
+                                    <label className='font-semibold text-[#03402E]' htmlFor="message">Message *</label>
+                                    <textarea name="message" id='message' value={formData.message} onChange={handleChange} placeholder="Enter your message" className="w-full h-40 p-4 text-lg border-b-2 rounded-lg  bg-white border-[#00A63E]   resize-none focus:outline-none" required   ></textarea>
                                 </div>
-                                <button type="submit" className="cursor-pointer p-3 mx-auto bg-[#04412F] text-white w-fit font-semibold rounded-md hover:bg-[#04412F] flex justify-center items-center gap-2"  >
+                                <button type="submit" className="cursor-pointer p-3 mx-auto bg-[#04412F] text-white w-fit font-semibold rounded-full  hover:bg-[#04412F] flex justify-center items-center gap-2"  >
                                     {status === 'Sending...' ? 'Submitting...' : 'Send message'}
                                 </button>
                             </form>

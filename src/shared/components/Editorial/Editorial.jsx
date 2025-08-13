@@ -83,7 +83,31 @@ function Editorial() {
         },
         {
             title: "P. Rajesh",
-            description: "Department of Computer Science and Engineering, Institute of Science and Technolog, India",
+            description: "Vel Tech Rangarajan Dr. Sagunthala R & D Institute of Science and Technology, India",
+        },
+        {
+            title: "Sidaoui Boutkhil",
+            description: "Department of Computer Science, Salhi Ahmed University of Naama, Algeria",
+        },
+        {
+            title: "Muhammd Umer Farooq",
+            description: "Department of Computer Science and Information Technology, NED University of Engineering and Technology, Pakistan",
+        },
+        {
+            title: "M. Sathish kumar",
+            description: "Department of Computer Application, Hindustan Institute of Technology and Science, India",
+        },
+        {
+            title: "Ledan Qian",
+            description: "Department of Information Technology, Wenzhou University, China",
+        },
+        {
+            title: "Omar Bin Samin",
+            description: "Department of Information Technology, Institute of Management Sciences, Pakistan",
+        },
+        {
+            title: "Asma Kausar Mukhtar Ali",
+            description: "Department of Information Technology, MJIIT University of Technology, Malaysia",
         },
     ];
     return (

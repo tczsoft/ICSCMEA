@@ -2,85 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import LastSection from "../Bottom/Bottom";
+import { RiCpuLine, RiBarChart2Line, RiRocketLine, RiTeamLine } from "react-icons/ri";
 
 
 export const Herosection = () => {
-  const team = [
-    {
-      image: '/assets/Images/members.jpg',
-      name: 'Name',
-      position: 'Position',
-    },
-    {
-      image: '/assets/Images/members.jpg',
-      name: 'Jane Smith',
-      position: 'Coordinator',
-    },
-    {
-      image: '/assets/Images/members.jpg',
-      name: 'Alex Johnson',
-      position: 'Technical Head',
-    },
-    {
-      image: '/assets/Images/members.jpg',
-      name: 'Alex',
-      position: 'Technical Head',
-    },
-  ];
-
-  const invitees = [
-    {
-      location: 'location',
-      Name: 'Name',
-      Position: 'Position',
-    },
-    {
-      location: 'location',
-      Name: 'Name',
-      Position: 'Position',
-    },
-    {
-      location: 'location',
-      Name: 'Name',
-      Position: 'Position',
-    },
-    {
-      location: 'location',
-      Name: 'Name',
-      Position: 'Position',
-    },
-  ];
-
-  const technical = [
-    {
-      location: 'location',
-      Name: 'Name',
-      Position: 'Position',
-    },
-    {
-      location: 'location',
-      Name: 'Name',
-      Position: 'Position',
-    },
-    {
-      location: 'location',
-      Name: 'Name',
-      Position: 'Position',
-    },
-    {
-      location: 'location',
-      Name: 'Name',
-      Position: 'Position',
-    },
-  ];
-
+  // const scopeHeadings = [
+  //   "Smart Computational Techniques",
+  //   "Data-Driven Approaches",
+  //   "Emerging Applications",
+  //   "Interdisciplinary Innovations",
+  // ];
   const scopeHeadings = [
-    "Smart Computational Techniques",
-    "Data-Driven Approaches",
-    "Emerging Applications",
-    "Interdisciplinary Innovations",
+    { text: "Smart Computational Techniques", Icon: RiCpuLine },
+    { text: "Data-Driven Approaches", Icon: RiBarChart2Line },
+    { text: "Emerging Applications", Icon: RiRocketLine },
+    { text: "Interdisciplinary Innovations", Icon: RiTeamLine },
   ];
-
   const date = [
     { Dates: '22-07-2025', Title: 'Full Paper Submission Deadline' },
     { Dates: '29-07-2025', Title: 'Notification of Decision' },
@@ -89,7 +26,6 @@ export const Herosection = () => {
     { Dates: '19-08-2025', Title: 'Camera-Ready Paper Submission' },
     { Dates: '26-08-2025', Title: 'Last Date for Registration / Payment' },
   ];
-
   return (
     <>
       <section className="relative lg:h-[calc(100dvh-30px)] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D]  " >
@@ -98,7 +34,7 @@ export const Herosection = () => {
         <div className="py-20 flex  flex-col justify-center   2xl:gap-20 xl:gap-10 gap-5 h-full">
           <div className="relative md:py-5 py-3 bg-[#4AF8BA] 2xl:w-1/2 w-3/4 rounded-tr-full rounded-br-full">
             <Marquee pauseOnHover>
-              <p className=" text-black overflow-hidden  font-bold md:text-xl uppercase"> International Conference on Smart Computational Methods and Emerging Applications <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  Intelligent Systems <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  Advanced Algorithms <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span> AI & Emerging Tech <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  Global Innovations  <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  </p>
+              <p className=" text-black overflow-hidden  font-bold md:text-xl uppercase">International Conference on Smart Computational Methods and Emerging Applications <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  Intelligent Systems <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  Advanced Algorithms <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span> AI & Emerging Tech <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  Global Innovations  <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  </p>
             </Marquee>
           </div>
           <div className="relative z-10 grid grid-cols-1 2xl:grid-cols-2 max-w-[90rem] gap-10 lg:py-0 py-10 mx-auto items-center px-4">
@@ -154,8 +90,8 @@ export const Herosection = () => {
           </section>
         </section>
       </section>
-      <section className="bg-white/96  py-10">
-        <section className="  max-w-[90rem]  mx-auto md:px-5 px-3  flex flex-col gap-5">
+      <section className="bg-white/96 py-10">
+        <section className="  max-w-[90rem] mx-auto md:px-5 px-3 flex flex-col gap-5">
           <div className="flex gap-3 justify-center items-center">
             <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">
             </div>
@@ -163,9 +99,26 @@ export const Herosection = () => {
               Scope of the Conference
             </h1>
           </div>
-          <p className=" text-justify md:text-lg">The International Conference on Smart Computational Methods and Emerging Applications aims to provide a global platform for researchers, academicians, industry experts, and innovators to exchange knowledge, share advancements, and explore novel trends in computational intelligence and its real-world applications. The conference will focus on cutting-edge computational methods and their integration into diverse domains to address complex challenges and enable transformative innovations.</p>
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
-            {scopeHeadings.map((heading, index) => (<p key={index} className="font-medium border text-center rounded-lg p-4"> {heading} </p>))}
+          <div className="grid lg:grid-cols-4 gap-5 items-center">
+            <div className="lg:col-span-1">
+              <img className="rounded-lg mx-auto" src="/images/home/emerging.webp" alt="" />
+            </div>
+            <div className="flex flex-col gap-4 md:col-span-3">
+              <p className="text-justify md:text-lg">The International Conference on Smart Computational Methods and Emerging Applications aims to provide a global platform for researchers, academicians, industry experts, and innovators to exchange knowledge, share advancements, and explore novel trends in computational intelligence and its real-world applications. The conference will focus on cutting-edge computational methods and their integration into diverse domains to address complex challenges and enable transformative innovations.</p>
+              {/* <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+                {scopeHeadings.map((heading, index) => (<p key={index} className="font-medium border-1 text-center border-[#033D2D] rounded-lg p-4"> {heading} </p>))}
+              </div> */}
+            </div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {scopeHeadings.map(({ text, Icon }, index) => (
+              <div key={index} className="font-medium border border-[#033D2D] rounded-lg p-4 flex flex-col items-center justify-center gap-3 text-center hover:shadow-md transition"  >
+                <Icon className="w-8 h-8 text-[#033D2D]" />
+                <p>{text}</p>
+              </div>
+            ))}
+          </div>
+          <div>
           </div>
         </section>
       </section>

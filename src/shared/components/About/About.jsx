@@ -1,80 +1,110 @@
 import React from 'react'
-import Bottom from '../Bottom/Bottom'
-import { BookOpen, Lightbulb, Network } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import Marquee from 'react-fast-marquee'
+import LastSection from '../Bottom/Bottom';
 
 function About() {
+    const highlights = [
+        {
+            title: "Keynote Addresses",
+            description: "By internationally renowned experts sharing groundbreaking insights.",
+        },
+        {
+            title: "Technical Paper Presentations",
+            description: "Explore innovations through multiple technical tracks.",
+        },
+        {
+            title: "Workshops & Tutorials",
+            description: "Hands-on sessions on emerging and disruptive technologies.",
+        },
+        {
+            title: "Industry Panel Discussions",
+            description: "Engage with industry leaders and explore real-world innovations.",
+        },
+        {
+            title: "Best Paper Awards",
+            description: "Recognizing excellence and offering journal publication opportunities.",
+        },
+        {
+            title: "Live Demos & Tech Exhibits",
+            description: "Explore smart solutions via live demos and tech exhibits.",
+        },
+    ];
     return (
         <>
             <section className='bg-white/96'>
-                <section className=' '>
-                    <section className=' '>
-                        <section>
-                            <div className="md:py-5  pt-10 md:pt-10">
-                                <div className='md:px-5 px-3'>
-                                    <div className="max-w-[70rem] mx-auto flex flex-col md:flex-row 2xl:items-center gap-5 lg:gap-15">
-                                        <div className="w-full">
-                                            <p className="pb-3 md:pb-6 text-justify md:text-[18px] leading-relaxed mb-2">
-                                                The International Conference on Emerging Trends in Computer Science & Engineering (ICETCSE) 2025 is a premier global forum that unites researchers, industry experts, and academic scholars to explore the latest innovations and advancements in computer science and engineering.                                        </p>
-                                            <div className='grid lg:grid-cols-2 gap-5 items-center mb-5'>
-                                                <div>
-                                                    <img src="/images/home/cs.jpg" className='rounded-md' alt="" />
-                                                </div>
-                                                <p className="pb-3 md:pb-6 text-justify md:text-[18px] leading-relaxed">
-                                                    At the heart of ICETCSE 2025 lies a commitment to driving innovation and fostering collaboration. The event will showcase keynote speeches from distinguished experts, technical paper presentations, panel discussions, and interactive workshops on pivotal topics such as artificial intelligence, business analytics, cloud computing, emerging technologies, and intelligent enterprise solutions. It offers a unique platform for thought leaders, researchers, and industry professionals to share groundbreaking insights, transformative ideas, and best practices across diverse sectors.
-                                                </p>
-                                            </div>
-                                            {/* <p className="pb-3 md:pb-6 text-justify md:text-[18px] leading-relaxed">
-                                            Participants will gain valuable insights into how AI and analytics are driving smarter decision-making, while scalable cloud systems are enabling seamless digital transformation. Real-world case studies, demos, and interactive sessions will showcase how businesses and institutions are leveraging these technologies to solve complex challenges and unlock new opportunities.                                    </p>
-                                        <p className=" text-justify md:text-[18px] leading-relaxed mb-10">
-                                            ICAABC 2025 is more than just a conference — it's a hub for forward-thinking dialogue, knowledge exchange, and strategic networking. Whether you're a researcher, data scientist, cloud architect, entrepreneur, or policy-maker, this event offers the opportunity to engage with the global tech community and contribute to shaping the future of intelligent, data-driven systems.
-                                        </p> */}
-                                        </div>
-                                    </div>
+                <section className="relative h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D]" >
+                    <img className="absolute -top-20 -left-20 2xl:block hidden" src="/assets/Images/point.png" alt="" />
+                    <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/assets/Images/Herosec.png')] opacity-20" ></div>
+                </section>
+                <section className="">
+                    <section className="max-w-[90rem] relative  mx-auto lg:px-5">
+                        <div className="lg:p-20 p-10 bg-[#4AF8BA] w-fit rounded-b-full absolute -top-5 rounded-tr-4xl xl:block hidden">
+                            <p className="text-center w-fit rounded-full font-semibold lg:text-3xl text-lg">About </p>
+                            <div className="p-2.5 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-5">
+                            </div>
+                            <div className="p-2.5 z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-4.5"></div>
+                         </div>
+                        <section className="grid xl:grid-cols-5 grid-cols-1 md:gap-5 gap-3 items-center ">
+                            <div className='col-span-1 xl:block hidden'>
+                            </div>
+                            <div className='flex flex-col md:gap-4 gap-2 col-span-4 md:my-10 my-5  '>
+                                <div className="text-justify md:text-lg text-sm leading-7 flex flex-col gap-4">
+                                    <p className="px-3"> The International Conference on Smart Computational Methods and Emerging Applications (ICSCMEA 2025) is a prestigious global forum designed to advance the frontiers of intelligent computational technologies and their real-world implementations. Set against the backdrop of rapid technological evolution, this conference offers a vital platform for scholars, engineers, scientists, technocrats, and industry professionals to share their pioneering ideas, research outcomes, and experiences. </p>
                                 </div>
                             </div>
                         </section>
                     </section>
                 </section>
-                <div className="bg-white rounded-lg max-w-[70rem] mx-auto mb-14 md:px-2 px-3">
-                    <h2 className="md:text-3xl text-2xl font-semibold text-center text-black mb-5">
-                        Conference Objectives
-                    </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8 gap-4">
-                        <div className="text-center border border-[#FEDE68] p-4 rounded-lg">
-                            <div className="w-16 h-16   rounded-full flex items-center justify-center mx-auto mb-4">
-                                <BookOpen className="w-8 h-8 text-blue-600" />
+                <section>
+                    <div className="md:py-12 py-6 px-6 ">
+                        <div className="max-w-[90rem] mx-auto text-center">
+                            <div className='flex items-center gap-2 justify-center md:mb-10 mb-5'>
+                                <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">   </div>
+                                <h2 className="md:text-2xl text-xl font-semibold ">Conference Highlights</h2>
                             </div>
-                            <h3 className="text-xl font-medium text-[#FF5722]  mb-3">Knowledge Sharing</h3>
-                            <p className="">
-                                Facilitate the exchange of cutting-edge research findings and innovative solutions
-                                among global experts in computer science and engineering.
-                            </p>
-                        </div>
-                        <div className="text-center border border-[#FEDE68] p-4 rounded-lg">
-                            <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <Network className="w-8 h-8 text-blue-600" />
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4">
+                                {highlights.map((item, index) => (
+                                    <div key={index} className="bg-white shadow-lg rounded-lg p-6 border-t-4 border-green-600 hover:scale-105 transition-transform duration-300">
+                                        <h3 className="md:text-xl text-lg font-semibold text-[#033D2D] mb-2">{item.title}</h3>
+                                        <p className="text-gray-600 md:text-base text-sm">{item.description}</p>
+                                    </div>
+                                ))}
                             </div>
-                            <h3 className="text-xl font-medium text-[#FF5722] mb-3">Collaboration</h3>
-                            <p className=" ">
-                                Build lasting professional relationships and foster collaborative partnerships
-                                between academic institutions and industry leaders.
-                            </p>
-                        </div>
-                        <div className="text-center  border border-[#FEDE68] p-4 rounded-lg">
-                            <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <Lightbulb className="w-8 h-8 text-blue-600" />
-                            </div>
-                            <h3 className="text-xl font-medium text-[#FF5722] mb-3">Innovation</h3>
-                            <p className=" ">
-                                Inspire breakthrough innovations that address real-world challenges and shape
-                                the future of technology and digital transformation.
-                            </p>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section className='bg-white/96'>
-                <Bottom />
+                </section>
+                <section className="max-w-[90rem] mx-auto px-3">
+                    <div className='flex items-center gap-3 mb-3 md:mb-6 justify-center'>
+                        <div className="bg-[#4AF8BA] p-3 rounded-full w-fit"> </div>
+                        <h1 className="md:text-2xl text-xl font-semibold">Our Mission</h1>
+                    </div>
+                    <div className="max-w-4xl mx-auto text-gray-700   leading-relaxed space-y-6 md:text-base text-sm">
+                        <p className='text-center md:text-lg'>
+                            At the <strong> International Conference on Smart Computational Methods and Emerging Applications </strong>,
+                            our mission is to advance innovation,  foster collaboration, and bridge the gap
+                            between theory and real-world solutions in the field of computational intelligence.
+                        </p>
+                        <ul className="list-disc list-outside space-y-2 pl-6 md:text-lg">
+                            <li>
+                                Promote cutting-edge research in smart algorithms, data-driven methods, and emerging technologies.
+                            </li>
+                            <li>
+                                Create a global platform for academics, researchers, and industry experts to exchange ideas and best practices.
+                            </li>
+                            <li>
+                                Support the development and deployment of intelligent solutions that address real-world challenges.
+                            </li>
+                            <li>
+                                Empower young researchers and innovators through engagement, mentorship, and recognition.
+                            </li>
+                            <li>
+                                Encourage interdisciplinary dialogue to fuel impactful scientific discovery and practical implementation.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <LastSection />
             </section>
 
         </>

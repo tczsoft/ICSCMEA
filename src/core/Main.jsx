@@ -54,7 +54,7 @@ const Main = () => {
       <div ref={headerRef} className="  fixed top-0  w-full  z-50">
         <Header />
       </div>
-      <main ref={mainRef}  >
+      <main ref={mainRef}>
         <Outlet />
       </main>
       <div>

@@ -55,22 +55,19 @@ function Submission() {
             googleSheetsParams.append('Email_Address', formData.Email_Address);
             googleSheetsParams.append('Institution_Name', formData.Institution_Name);
             googleSheetsParams.append('Paper_Track', formData.Paper_Track);
-            const mailPromise = fetch('https://etcse-conference.org/api/send_mail.php', {
+            const mailPromise = fetch('http://192.168.1.30:5173/ICSCME/send_mail.php', {
                 method: 'POST',
                 body: formDataToSend,
             });
             const sheetsPromise = fetch('https://script.google.com/macros/s/AKfycbwZ_TtKUqAfcue9TNCKy57hTrCKDUP5dTQnWbpSxBDzlRMllEuOoaxzRDl0kQPah5pZ/exec', {
                 method: 'POST',
                 mode: 'no-cors',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded', },
                 body: googleSheetsParams.toString(),
             });
             const [mailResponse, sheetsResponse] = await Promise.allSettled([mailPromise, sheetsPromise]);
             const mailSuccess = mailResponse.status === 'fulfilled' && mailResponse.value.ok;
             const sheetsSuccess = sheetsResponse.status === 'fulfilled';
-
             if (sheetsResponse.status === 'rejected') {
                 console.error('Sheets request failed:', sheetsResponse.reason);
             }
@@ -92,7 +89,6 @@ function Submission() {
                     console.error('Element with ID "Paper_File" not found.');
                 }
                 toast.success(`Paper submitted successfully!`);
-
             } else if (mailSuccess && !sheetsSuccess) {
                 setStatus('Email sent successfully, but there might be an issue with Google Sheets.');
                 toast.warning('Email sent successfully. Please check if data was saved to Google Sheets.');
@@ -105,7 +101,6 @@ function Submission() {
                 setStatus('There might be issues with the submission. Please check manually.');
                 toast.error('Submission completed, but please verify the results manually.');
             }
-
         } catch (error) {
             console.error('Error:', error);
             setStatus('An error occurred during submission. Please try again.');
@@ -114,60 +109,6 @@ function Submission() {
     }
     return (
         <>
-            {/* <section>
-                <section className="  pb-10 text-center mt-20">
-                    <div className="text-center pt-10">
-                        <h1 className="text-3xl md:text-4xl font-bold pb-6 md:pb-10  relative inline-block after:content-[''] after:block after:w-40 after:h-1.5 after:bg-[#FFD700] after:mx-auto after:mt-2">
-                            New Paper Submission
-                        </h1>
-                    </div>
-                    <div className='max-w-[90rem] mx-auto md:px-5 px-3 mb-5'>
-                        <div className='grid md:grid-cols-2 grid-cols-1 gap-10 '>
-                            <form onSubmit={handleSubmit} className='shadow-lg p-4 border border-gray-100 rounded-lg flex flex-col gap-5 h-fit'>
-                                <input type="text" placeholder='Paper Title' required name="Paper_Title" value={formData.Paper_Title} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />
-                                <input type="text" placeholder='Author Full Name' required name="Author_FUll_Name" value={formData.Author_FUll_Name} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />
-                                <input type="text" placeholder='Email Address' required name="Email_Address" id="Email_Address" value={formData.Email_Address} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />
-                                <input type="text" placeholder='Institution Name' required name="Institution_Name" id="Institution_Name" value={formData.Institution_Name} onChange={handleFileInputChange} className='p-3 border w-full rounded-lg' />
-                                <select name="Paper_Track" id="Paper_Track" value={formData.Paper_Track || ""} onChange={handleFileInputChange} required className="p-3 border rounded-lg">
-                                    <option value="">Select Paper Track</option>
-                                    <option value="Artificial Intelligence & Machine Learning">Artificial Intelligence & Machine Learning</option>
-                                    <option value="Data Science & Big Data Analytics">Data Science & Big Data Analytics</option>
-                                    <option value="Cloud Computing & Virtualization">Cloud Computing & Virtualization</option>
-                                    <option value="Cybersecurity & Information Assurance">Cybersecurity & Information Assurance</option>
-                                    <option value="Internet of Things (IoT)">Internet of Things (IoT)</option>
-                                    <option value="Blockchain & Distributed Systems">Blockchain & Distributed Systems</option>
-                                    <option value="Software Engineering & Agile Development">Software Engineering & Agile Development</option>
-                                    <option value="Human-Computer Interaction & UX Design">Human-Computer Interaction & UX Design</option>
-                                    <option value="Web Technologies & Semantic Web">Web Technologies & Semantic Web</option>
-                                    <option value="Computer Networks & 5G Technologies">Computer Networks & 5G Technologies</option>
-                                </select>
-                                <input type="file" id="Paper_File" accept=".pdf,.doc,.docx" name="Paper_File" onChange={handleFileInputChange} required className="block w-full text-sm text-gray-900 border p-3 rounded-lg cursor-pointer bg-white focus:outline-none" />
-                                <button className='bg-[#155DFC] p-3 text-white rounded-lg cursor-pointer'>
-                                    {status === 'Sending...' ? 'Submitting...' : 'Submit Paper'}
-                                </button>
-                            </form>
-                            <div>
-                                <div className="bg-gray-100 p-6 lg:px-20 rounded-xl flex flex-col justify-between shadow-md order-1 md:order-2">
-                                    <h2 className="text-xl md:text-2xl font-bold mb-4 text-left text-blue-600">Submission Guidelines</h2>
-                                    <ul className="space-y-3  md:text-base  text-sm  text-left" style={{ listStyleType: "circle" }}>
-                                        <li>Ensure all author details are correctly filled.</li>
-                                        <li>Upload a PDF or Word document of the paper.</li>
-                                        <li>Only one submission per author will be accepted.</li>
-                                        <li>Follow the formatting guidelines provided.</li>
-                                    </ul>
-                                    <h2 className="text-xl md:text-2xl font-bold mt-6 mb-4 text-left text-blue-600">Important Notes</h2>
-                                    <ul className="space-y-3 md:text-base  text-sm text-left" style={{ listStyleType: "circle" }}>
-                                        <li>Verify the accuracy of the contact details before submission.</li>
-                                        <li>The first author will be contacted for further correspondence.</li>
-                                        <li>Submissions must be made before the deadline date.</li>
-                                        <li>Late submissions may not be considered for review.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section > */}
             <section className='bg-[url("/images/home/contact-image.webp")] bg-no-repeat bg-center bg-cover md:h-[20vh] h-[15vh] w-full flex items-center justify-center' >
                 <div className='text-white md:text-3xl text-xl font-bold uppercase'>
                     New Paper Submission

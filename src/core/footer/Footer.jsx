@@ -12,8 +12,7 @@ const Footer = () => {
               <div className="text-center  md:text-left mx-auto flex flex-col gap-4">
                 <h3 className="text-2xl font-bold mb-2">ICSCMEA</h3>
                 {/* <img className=' w-28 mx-auto md:mx-0' src="/assets/Images/ICISCM.png" alt="" /> */}
-                <p className="text-sm text-gray-200">
-                  International Conference on Smart Computational Methods and Emerging Applications                </p>
+                <p className="text-sm text-gray-200">  International Conference on Smart Computational Methods and Emerging Applications</p>
               </div>
               <div className="text-center md:text-left  mx-auto">
                 <h4 className="text-lg font-semibold mb-2">Pages</h4>

@@ -33,7 +33,7 @@ export const Herosection = () => {
         <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/images/home/Herosec.png')] opacity-20 bg-fixed"></div>
         <div className="py-20 flex flex-col justify-center 2xl:gap-20 xl:gap-10 gap-5 h-full">
           <div className="relative md:py-5 py-3 bg-[#4AF8BA] 2xl:w-1/2 w-3/4 rounded-tr-full rounded-br-full">
-            <Marquee pauseOnHover>
+            <Marquee pauseOnHover direction="right">
               <p className=" text-black overflow-hidden  font-bold md:text-xl uppercase">International Conference on Smart Computational Methods and Emerging Applications <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  Intelligent Systems <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  Advanced Algorithms <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span> AI & Emerging Tech <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  Global Innovations  <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  </p>
             </Marquee>
           </div>
@@ -43,13 +43,13 @@ export const Herosection = () => {
                 International Conference on Smart Computational Methods and Emerging Applications</h1>
               <div className=" ">
                 <Link to="/paper-submission">
-                  <button className=" border border-[#4AF8BA] px-6 py-3 rounded-full  text-white cursor-pointer">
-                      Register Now
+                  <button className="border border-[#4AF8BA] px-6 py-3 rounded-full  text-white cursor-pointer">
+                    Register Now
                   </button>
                 </Link>
               </div>
             </div>
-            <img src="public/images/home/pages.jpg" className="rounded-xl 2xl:block hidden" alt="" />
+            {/* <img src="public/images/home/pages.jpg" className="rounded-xl 2xl:block hidden" alt="" /> */}
           </div>
         </div>
       </section>
@@ -61,11 +61,11 @@ export const Herosection = () => {
             <div className="p-2.5  z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-4.5">
             </div>
           </div>
-          <section className="grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-3 items-center">
+          <section className="grid md:grid-cols-3 grid-cols-1 md:gap-5 gap-3 items-center">
             <div className="z-10">
               <img src="/images/home/aboutsection.png" className="md:w-[500px] w-[200px] md:mx-0 mx-auto" alt="" />
             </div>
-            <div className='flex flex-col md:gap-4 gap-2 lg:my-0 my-5'>
+            <div className='flex flex-col md:gap-4 gap-2 lg:my-0 my-5 col-span-2'>
               <div className="flex gap-3 justify-center items-center">
                 <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">
                 </div>
@@ -131,14 +131,14 @@ export const Herosection = () => {
             <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-2 md:gap-10 gap-5">
               {date.map((item, index) => (
                 <section key={index} className='grid grid-cols-1 md:grid-cols-5 items-center'>
-                  <div className={`bg-[#033D2D] col-span-1 md:col-span-4 text-white rounded-xl md:p-10 p-5 w-full h-full ${index % 2 === 0 ? 'order-2 md:order-1' : 'order-2 md:order-2'}`}>
+                  <div className={`bg-[#033D2D] col-span-1 md:col-span-4 text-white rounded-xl md:p-7 p-5 w-full h-full ${index % 2 === 0 ? 'order-2 md:order-1' : 'order-2 md:order-2'}`}>
                     <div className="flex items-center gap-5 h-full justify-center">
                       <div className="md:text-base text-sm font-medium flex flex-col text-center gap-5">
                         {item.Title}
                       </div>
                     </div>
                   </div>
-                  <div className={`md:bg-[#4AF8BA] p-4 col-span-1 font-semibold ${index % 2 === 0 ? 'order-1 md:order-2 rounded-tr-3xl rounded-br-3xl' : 'order-1 md:order-1  rounded-tl-3xl rounded-bl-3xl text-right'}`}>
+                  <div className={`md:bg-[#4AF8BA] p-4 col-span-1 font-semibold ${index % 2 === 0 ? 'order-1 md:order-2 rounded-tr-3xl rounded-br-3xl' : 'order-1 md:order-1 rounded-tl-3xl rounded-bl-3xl text-right'}`}>
                     <p className="text-base">{item.Dates}</p>
                   </div>
                 </section>

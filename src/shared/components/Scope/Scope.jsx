@@ -53,8 +53,7 @@ function Scope() {
                     <section className="max-w-[90rem] relative  mx-auto lg:px-5">
                         <div className="lg:p-20 p-10 bg-[#4AF8BA] w-fit rounded-b-full absolute -top-5 rounded-tr-4xl xl:block hidden">
                             <p className="text-center w-fit rounded-full font-semibold 2xl:text-3xl text-lg">Scope</p>
-                            <div className="p-2.5 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-5">
-                            </div>
+                            <div className="p-2.5 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-5"> </div>
                             <div className="p-2.5 z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-4.5"></div>
                         </div>
                         <section className="grid xl:grid-cols-5 grid-cols-1 md:gap-5 gap-3 items-center">
@@ -77,7 +76,10 @@ function Scope() {
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4">
                                 {highlights.map((item, index) => (
                                     <div key={index} className="bg-white shadow-lg rounded-lg p-6 border-t-4 border-green-600 hover:scale-105 transition-transform duration-300">
-                                        <h3 className="md:text-xl text-lg font-semibold text-[#033D2D] mb-2">{item.title}</h3>
+                                        <div className='flex items-center gap-2  mb-2 justify-center'>
+                                            <i class="fi fi-sr-badge-check flex items-center text-[#033D2D]"></i>
+                                            <h3 className="md:text-xl text-lg font-semibold text-[#033D2D]">{item.title}</h3>
+                                        </div>
                                         <p className="text-gray-600 md:text-base text-sm">{item.description}</p>
                                     </div>
                                 ))}

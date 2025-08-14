@@ -60,7 +60,6 @@ import LastSection from '../Bottom/Bottom';
 
 function Editorial() {
     const highlights = [
-
         {
             title: "22-07-2025",
             description: "Full Paper Submission Deadline",

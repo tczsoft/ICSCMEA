@@ -10,7 +10,7 @@ function LastSection() {
                         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 items-center text-white '>
                             <div className="bg-[#033D2D] md:p-10 p-5 w-full h-full transform  flex items-center justify-center rounded-xl relative">
                                 <div className="md:p-6 p-3 bg-[#4AF8BA] w-fit rounded-b-full absolute -top-3 left-10 rounded-tr-xl">
-                                    <div className="md:p-1.5 p-1 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-3">
+                                    <div className="p-1.5  rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-3">
                                     </div>
                                     <div className="p-1.5  z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-3">
                                     </div>

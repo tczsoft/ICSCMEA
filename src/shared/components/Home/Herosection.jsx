@@ -106,7 +106,7 @@ export const Herosection = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {scopeHeadings.map(({ text, Icon }, index) => (
-              <div key={index} className="font-medium rounded-lg p-4 flex flex-col items-center justify-center gap-3 text-center shadow-md transition"  >
+              <div key={index} className="font-medium rounded-lg p-4 bg-white flex flex-col items-center justify-center gap-3 text-center shadow-md transition"  >
                 <Icon className="w-8 h-8 text-[#033D2D]" />
                 <p>{text}</p>
               </div>

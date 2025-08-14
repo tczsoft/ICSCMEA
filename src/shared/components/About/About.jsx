@@ -79,27 +79,32 @@ function About() {
                         <div className="bg-[#4AF8BA] p-3 rounded-full w-fit"> </div>
                         <h1 className="md:text-2xl text-xl font-semibold">Our Mission</h1>
                     </div>
-                    <div className="max-w-4xl mx-auto text-gray-700  md:mb-10 mb-6 leading-relaxed space-y-6 md:text-base text-sm">
-                        <p className='md:text-lg text-justify'>
-                            At the <strong> International Conference on Smart Computational Methods and Emerging Applications </strong>, our mission is to advance innovation,  foster collaboration, and bridge the gap  between theory and real-world solutions in the field of computational intelligence.
-                        </p>
-                        <ul className="list-disc list-outside space-y-2 pl-6 md:text-lg">
-                            <li>
-                                Promote cutting-edge research in smart algorithms, data-driven methods, and emerging technologies.
-                            </li>
-                            <li>
-                                Create a global platform for academics, researchers, and industry experts to exchange ideas and best practices.
-                            </li>
-                            <li>
-                                Support the development and deployment of intelligent solutions that address real-world challenges.
-                            </li>
-                            <li>
-                                Empower young researchers and innovators through engagement, mentorship, and recognition.
-                            </li>
-                            <li>
-                                Encourage interdisciplinary dialogue to fuel impactful scientific discovery and practical implementation.
-                            </li>
-                        </ul>
+                    <div className='grid lg:grid-cols-3 items-center my-10 md:gap-10 gap-5 '>
+                        <div>
+                            <img src="/images/home/about-conference.jpg" className='h-96 rounded-xl mx-auto' alt="" />
+                        </div>
+                        <div className="  mx-auto text-gray-700  md:mb-10 mb-6 leading-relaxed space-y-6 md:text-base text-sm lg:col-span-2">
+                            <p className='md:text-lg text-justify'>
+                                At the <strong> International Conference on Smart Computational Methods and Emerging Applications </strong>, our mission is to advance innovation,  foster collaboration, and bridge the gap  between theory and real-world solutions in the field of computational intelligence.
+                            </p>
+                            <ul className="list-disc list-outside space-y-2 pl-6 md:text-lg">
+                                <li>
+                                    Promote cutting-edge research in smart algorithms, data-driven methods, and emerging technologies.
+                                </li>
+                                <li>
+                                    Create a global platform for academics, researchers, and industry experts to exchange ideas and best practices.
+                                </li>
+                                <li>
+                                    Support the development and deployment of intelligent solutions that address real-world challenges.
+                                </li>
+                                <li>
+                                    Empower young researchers and innovators through engagement, mentorship, and recognition.
+                                </li>
+                                <li>
+                                    Encourage interdisciplinary dialogue to fuel impactful scientific discovery and practical implementation.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
                 <LastSection />

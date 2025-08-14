@@ -60,17 +60,17 @@ import LastSection from '../Bottom/Bottom';
 
 function Editorial() {
     const highlights = [
-        { title: "A.V.L.N. Sujith", description: "Department of Computer Science and Engineering, JNTUA University, India",},
-        { title: "Hung Nguyen", description: "Department of Information Technology, Nha Trang university, Vietnam",},
-        { title: "Tusar Kanti Dash", description: "Department of Electronics and Communication Engineering, C V Raman Global University, India",},
-        { title: "D. Angeline Benitta", description: "Department of Computer Applications, Hindustan Institute of Technology and Science, India",},
-        { title: "Samir Hallaci", description: "Department of Computer Science, Guelma University, Algeria",},
-        { title: "Sidaoui Boutkhil", description: "Department of Computer Science, Salhi Ahmed University of Naama, Algeria",},
+        { title: "A.V.L.N. Sujith", description: "Department of Computer Science and Engineering, JNTUA University, India", },
+        { title: "Hung Nguyen", description: "Department of Information Technology, Nha Trang university, Vietnam", },
+        { title: "Tusar Kanti Dash", description: "Department of Electronics and Communication Engineering, C V Raman Global University, India", },
+        { title: "D. Angeline Benitta", description: "Department of Computer Applications, Hindustan Institute of Technology and Science, India", },
+        { title: "Samir Hallaci", description: "Department of Computer Science, Guelma University, Algeria", },
+        { title: "Sidaoui Boutkhil", description: "Department of Computer Science, Salhi Ahmed University of Naama, Algeria", },
         { title: "Muhammd Umer Farooq", description: "Department of Computer Science and Information Technology, NED University of Engineering and Technology, Pakistan", },
-        { title: "M. Sathish kumar", description: "Department of Computer Application, Hindustan Institute of Technology and Science, India",},
-        { title: "Ledan Qian", description: "Department of Information Technology, Wenzhou University, China",},
+        { title: "M. Sathish kumar", description: "Department of Computer Application, Hindustan Institute of Technology and Science, India", },
+        { title: "Ledan Qian", description: "Department of Information Technology, Wenzhou University, China", },
         { title: "Omar Bin Samin", description: "Department of Information Technology, Institute of Management Sciences, Pakistan", },
-        { title: "Asma Kausar Mukhtar Ali", description: "Department of Information Technology, MJIIT University of Technology, Malaysia",},
+        { title: "Asma Kausar Mukhtar Ali", description: "Department of Information Technology, MJIIT University of Technology, Malaysia", },
         { title: "Adekunle Musibau Ibrahim", description: " Department of Computer Science, Osun State University, Nigeria", },
         { title: "PPG Dinesh Asanka", description: "Department of Industrial Management, University of Kelaniya, Sri Lanka", },
         { title: "Arindom Kundu", description: "Department of Computer Science and Engineering, Daffodil International University, Bangladesh", },
@@ -117,7 +117,7 @@ function Editorial() {
                             </div>
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4">
                                 {highlights.map((item, index) => (
-                                    <div key={index} className="bg-white shadow-lg rounded-lg p-6 border-t-4 border-green-600 hover:scale-105 transition-transform duration-300">
+                                    <div key={index} className="bg-white shadow-lg rounded-lg p-6 h-16   overflow-hidden hover:overflow-visible hover:h-full duration-300">
                                         <h3 className="md:text-xl text-lg font-semibold text-[#033D2D] mb-2">Dr. {item.title}</h3>
                                         <p className="text-gray-600 md:text-base text-sm">{item.description}</p>
                                     </div>

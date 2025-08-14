@@ -60,71 +60,25 @@ import LastSection from '../Bottom/Bottom';
 
 function Editorial() {
     const highlights = [
-
-        {
-            title: "A.V.L.N. Sujith",
-            description: "Department of Computer Science and Engineering, JNTUA University, India",
-        },
-        {
-            title: "Hung Nguyen",
-            description: "Department of Information Technology, Nha Trang university, Vietnam",
-        },
-        {
-            title: "Tusar Kanti Dash",
-            description: "Department of Electronics and Communication Engineering, C V Raman Global University, India",
-        },
-        {
-            title: "D. Angeline Benitta",
-            description: "Department of Computer Applications, Hindustan Institute of Technology and Science, India",
-        },
-        {
-            title: "Samir Hallaci",
-            description: "Department of Computer Science, Guelma University, Algeria",
-        },
-        {
-            title: "Sidaoui Boutkhil",
-            description: "Department of Computer Science, Salhi Ahmed University of Naama, Algeria",
-        },
-        {
-            title: "Muhammd Umer Farooq",
-            description: "Department of Computer Science and Information Technology, NED University of Engineering and Technology, Pakistan",
-        },
-        {
-            title: "M. Sathish kumar",
-            description: "Department of Computer Application, Hindustan Institute of Technology and Science, India",
-        },
-        {
-            title: "Ledan Qian",
-            description: "Department of Information Technology, Wenzhou University, China",
-        },
-        {
-            title: "Omar Bin Samin",
-            description: "Department of Information Technology, Institute of Management Sciences, Pakistan",
-        },
-        {
-            title: "Asma Kausar Mukhtar Ali",
-            description: "Department of Information Technology, MJIIT University of Technology, Malaysia",
-        },
-        {
-            title: "Adekunle Musibau Ibrahim",
-            description: " Department of Computer Science, Osun State University, Nigeria",
-        },
-        {
-            title: "PPG Dinesh Asanka",
-            description: "Department of Industrial Management, University of Kelaniya, Sri Lanka",
-        },
-        {
-            title: "Arindom Kundu",
-            description: "Department of Computer Science and Engineering, Daffodil International University, Bangladesh",
-        },
-        {
-            title: "Moses Adah Agana",
-            description: "Department of Computer Science and Engineering, University of Calabar, Nigeria",
-        },
-        {
-            title: "V. Pravenea",
-            description: "Dr.N.G.P Institute of Technology, India",
-        },
+        { title: "A.V.L.N. Sujith", description: "Department of Computer Science and Engineering, JNTUA University, India", },
+        { title: "Hung Nguyen", description: "Department of Information Technology, Nha Trang university, Vietnam", },
+        { title: "Tusar Kanti Dash", description: "Department of Electronics and Communication Engineering, C V Raman Global University, India", },
+        { title: "D. Angeline Benitta", description: "Department of Computer Applications, Hindustan Institute of Technology and Science, India", },
+        { title: "Samir Hallaci", description: "Department of Computer Science, Guelma University, Algeria", },
+        { title: "Sidaoui Boutkhil", description: "Department of Computer Science, Salhi Ahmed University of Naama, Algeria", },
+        { title: "Muhammd Umer Farooq", description: "Department of Computer Science and Information Technology, NED University of Engineering and Technology, Pakistan", },
+        { title: "M. Sathish kumar", description: "Department of Computer Application, Hindustan Institute of Technology and Science, India", },
+        { title: "Ledan Qian", description: "Department of Information Technology, Wenzhou University, China", },
+        { title: "Omar Bin Samin", description: "Department of Information Technology, Institute of Management Sciences, Pakistan", },
+        { title: "Asma Kausar Mukhtar Ali", description: "Department of Information Technology, MJIIT University of Technology, Malaysia", },
+        { title: "Adekunle Musibau Ibrahim", description: " Department of Computer Science, Osun State University, Nigeria", },
+        { title: "PPG Dinesh Asanka", description: "Department of Industrial Management, University of Kelaniya, Sri Lanka", },
+        { title: "Arindom Kundu", description: "Department of Computer Science and Engineering, Daffodil International University, Bangladesh", },
+        { title: "Moses Adah Agana", description: "Department of Computer Science and Engineering, University of Calabar, Nigeria", },
+        { title: "V. Pravenea", description: "Department of Computer Science and Engineering, Dr.N.G.P Institute of Technology, India", },
+        { title: "S. Stewart Kirubakaran", description: "Department of Computer Science and Engineering, Karunya Institute of Technology and Sciences, India", },
+        { title: "Kabir G. Kharade", description: "Department of Computer Science and Engineering, Shivaji University, India", },
+        { title: "P. Punitha", description: "Department of Artificial Intelligence and Data Science, Tagore Institute of Engineering and Technology, India", },
     ];
     return (
         <>

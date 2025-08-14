@@ -123,7 +123,7 @@ function Submission() {
                             <div className="p-2.5 z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-4.5"></div>
                         </div>
                         <section className="grid xl:grid-cols-5 grid-cols-1 md:gap-5 gap-3 items-center">
-                            <div className='col-span-1 xl:block hidden'>  </div>
+                            <div className='col-span-1 xl:block hidden'></div>
                             <div className='flex flex-col md:gap-4 gap-2 col-span-4 md:my-10 my-5'>
                                 <div className="w-full px-4 grid md:grid-cols-2 gap-5 bg-white   order-1 lg:order-2">
                                     <div className='border-t-4 p-3 rounded-lg border-[#00A63E] shadow-md'>

@@ -109,6 +109,26 @@ function Editorial() {
             title: "Asma Kausar Mukhtar Ali",
             description: "Department of Information Technology, MJIIT University of Technology, Malaysia",
         },
+        {
+            title: "Adekunle Musibau Ibrahim",
+            description: " Department of Computer Science, Osun State University, Nigeria",
+        },
+        {
+            title: "PPG Dinesh Asanka",
+            description: "Department of Industrial Management, University of Kelaniya, Sri Lanka",
+        },
+        {
+            title: "Arindom Kundu",
+            description: "Department of Computer Science and Engineering, Daffodil International University, Bangladesh",
+        },
+        {
+            title: "Moses Adah Agana",
+            description: "Department of Computer Science and Engineering, University of Calabar, Nigeria",
+        },
+        {
+            title: "Moses Adah Agana",
+            description: "Department of Computer Science and Engineering, University of Calabar, Nigeria",
+        },
     ];
     return (
         <>

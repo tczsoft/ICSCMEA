@@ -119,7 +119,7 @@ export const Herosection = () => {
         </section>
       </section>
       <section className=" flex flex-col md:gap-10  gap-10 bg-white/96">
-        <section className="  max-w-[90rem]  mx-auto md:px-5 px-3 ">
+        <section className="  max-w-[90rem]  mx-auto md:px-5 px-3">
           <div className=" flex flex-col md:gap-5 gap-3">
             <div className="flex gap-3 justify-center items-center">
               <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">

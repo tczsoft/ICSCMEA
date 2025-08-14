@@ -48,7 +48,7 @@ function About() {
                         <section className="grid xl:grid-cols-5 grid-cols-1 md:gap-5 gap-3 items-center">
                             <div className='col-span-1 xl:block hidden'>
                             </div>
-                            <div className='flex flex-col md:gap-4 gap-2 col-span-4 md:my-10 my-5'>
+                            <div className='flex flex-col md:gap-4 gap-2 col-span-4 md:mt-10 mt-5'>
                                 <div className="text-justify md:text-lg text-sm leading-7 flex flex-col gap-4">
                                     <p className="px-3"> The International Conference on Smart Computational Methods and Emerging Applications is a prestigious global forum designed to advance the frontiers of intelligent computational technologies and their real-world implementations. Set against the backdrop of rapid technological evolution, this conference offers a vital platform for scholars, engineers, scientists, technocrats, and industry professionals to share their pioneering ideas, research outcomes, and experiences. </p>
                                 </div>

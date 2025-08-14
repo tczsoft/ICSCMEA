@@ -110,23 +110,22 @@ function Submission() {
     return (
         <>
             <section className='bg-white/96'>
-                <section className="relative h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D] lg:block hidden" >
+                <section className="relative h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D] lg:block hidden">
                     <img className="absolute -top-20 -left-20 2xl:block hidden" src="/assets/Images/point.png" alt="" />
-                    <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/assets/Images/Herosec.png')] opacity-20" ></div>
+                    <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/assets/Images/Herosec.png')] opacity-20"></div>
                 </section>
                 <section className="lg:pt-0 pt-16">
                     <section className="max-w-[90rem] relative  mx-auto lg:px-5">
                         <div className="lg:p-20 p-10 bg-[#4AF8BA] w-fit rounded-b-full absolute -top-5 rounded-tr-4xl xl:block hidden">
                             <p className="text-center w-fit rounded-full font-semibold 2xl:text-3xl text-lg">Scope</p>
-                            <div className="p-2.5 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-5">
-                            </div>
+                            <div className="p-2.5 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-5"></div>
                             <div className="p-2.5 z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-4.5"></div>
                         </div>
                         <section className="grid xl:grid-cols-5 grid-cols-1 md:gap-5 gap-3 items-center">
                             <div className='col-span-1 xl:block hidden'></div>
                             <div className='flex flex-col md:gap-4 gap-2 col-span-4 md:my-10 my-5'>
-                                <div className="w-full px-4 grid md:grid-cols-2 gap-5 bg-white   order-1 lg:order-2">
-                                    <div className='border-t-4 p-3 rounded-lg border-[#00A63E] shadow-md'>
+                                <div className="w-full px-4 grid md:grid-cols-2 gap-5 bg-white order-1 lg:order-2">
+                                    <div className='border-t-4 p-5 rounded-lg border-[#00A63E] shadow-md'>
                                         <h2 className="text-2xl font-semibold text-gray-800 mb-4 underline underline-offset-4">Submission Guidelines</h2>
                                         <ul className="space-y-3 text-gray-700">
                                             <li>Papers must be written in English.</li>
@@ -137,7 +136,7 @@ function Submission() {
                                             <li>Blind all author information for review.</li>
                                         </ul>
                                     </div>
-                                    <div className='border-t-4 p-3 rounded-lg shadow-md border-[#00A63E]'>
+                                    <div className='border-t-4 p-5 rounded-lg shadow-md border-[#00A63E]'>
                                         <h2 className="text-2xl font-semibold text-gray-800 mb-4 underline underline-offset-4">Important Notes</h2>
                                         <ul className="space-y-3 text-gray-700">
                                             <li>All papers undergo a double-blind peer review process.</li>
@@ -155,7 +154,7 @@ function Submission() {
                 </section>
                 <section className="pb-10" id="paper-submission">
                     <div className="w-full  max-w-[60rem] pt-5 px-4 flex flex-col lg:flex-row gap-8 items-center justify-center mx-auto">
-                        <div className="w-full lg:w-2/3 bg-white shadow-lg rounded-lg p-8 order-2 lg:order-1">
+                        <div className="w-full lg:w-2/3 bg-white shadow-lg rounded-lg md:p-8 p-4 order-2 lg:order-1">
                             <form className="space-y-6" onSubmit={handleSubmit}>
                                 <div>
                                     <label htmlFor="Paper_Title" className="block text-lg font-medium text-gray-700">Paper Title</label>

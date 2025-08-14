@@ -25,7 +25,7 @@ const Footer = () => {
               <div className="text-center md:text-left  mx-auto">
                 <h4 className="text-lg font-semibold mb-2">Conference Info</h4>
                 <ul className="space-y-1 text-sm">
-                  <li><Link to="/key-dates" className="hover:underline">Registration Details</Link></li>
+                  <li><Link to="/dates" className="hover:underline">Important Dates</Link></li>
                   <li><Link to="/paper-submission" className="hover:underline">Paper Submission</Link></li>
                 </ul>
               </div>

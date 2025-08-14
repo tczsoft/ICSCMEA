@@ -82,10 +82,6 @@ function Editorial() {
             description: "Department of Computer Science, Guelma University, Algeria",
         },
         {
-            title: "P. Rajesh",
-            description: "Vel Tech Rangarajan Dr. Sagunthala R & D Institute of Science and Technology, India",
-        },
-        {
             title: "Sidaoui Boutkhil",
             description: "Department of Computer Science, Salhi Ahmed University of Naama, Algeria",
         },
@@ -126,8 +122,8 @@ function Editorial() {
             description: "Department of Computer Science and Engineering, University of Calabar, Nigeria",
         },
         {
-            title: "Moses Adah Agana",
-            description: "Department of Computer Science and Engineering, University of Calabar, Nigeria",
+            title: "V. Pravenea",
+            description: "Dr.N.G.P Institute of Technology, India",
         },
     ];
     return (

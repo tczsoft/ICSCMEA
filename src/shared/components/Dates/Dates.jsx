@@ -96,7 +96,7 @@ function Editorial() {
                 <section className=" lg:pt-0 pt-16">
                     <section className="max-w-[90rem] relative  mx-auto lg:px-5">
                         <div className="lg:p-20 p-10 bg-[#4AF8BA] w-fit rounded-b-full absolute -top-5 rounded-tr-4xl xl:block hidden">
-                            <p className="text-center w-fit rounded-full font-semibold lg:text-3xl text-lg">Dates</p>
+                            <p className="text-center w-fit rounded-full font-semibold 2xl:text-3xl text-lg">Dates</p>
                             <div className="p-2.5 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-5">
                             </div>
                             <div className="p-2.5 z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-4.5"></div>

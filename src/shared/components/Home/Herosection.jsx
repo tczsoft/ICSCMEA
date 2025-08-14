@@ -139,7 +139,7 @@ export const Herosection = () => {
                     </div>
                   </div>
                   <div className={`md:bg-[#4AF8BA] p-4 col-span-1 font-semibold ${index % 2 === 0 ? 'order-1 md:order-2 rounded-tr-3xl rounded-br-3xl' : 'order-1 md:order-1 rounded-tl-3xl rounded-bl-3xl text-right'}`}>
-                    <p className="text-base">{item.Dates}</p>
+                    <p className="2xl:text-base text-sm">{item.Dates}</p>
                   </div>
                 </section>
               ))}

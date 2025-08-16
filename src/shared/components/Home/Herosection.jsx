@@ -6,12 +6,6 @@ import { RiCpuLine, RiBarChart2Line, RiRocketLine, RiTeamLine } from "react-icon
 
 
 export const Herosection = () => {
-  // const scopeHeadings = [
-  //   "Smart Computational Techniques",
-  //   "Data-Driven Approaches",
-  //   "Emerging Applications",
-  //   "Interdisciplinary Innovations",
-  // ];
   const scopeHeadings = [
     { text: "Smart Computational Techniques", Icon: RiCpuLine },
     { text: "Data-Driven Approaches", Icon: RiBarChart2Line },
@@ -63,7 +57,7 @@ export const Herosection = () => {
             <div className="z-10">
               <img src="/images/home/aboutsection.png" className="md:w-[500px] w-[200px] md:mx-0 mx-auto" alt="" />
             </div>
-            <div className='flex flex-col md:gap-4 gap-2 lg:my-0 my-5 2xl:col-span-2'>
+            <div className='flex flex-col md:gap-4 gap-2 lg:my-0  2xl:col-span-2'>
               <div className="flex gap-3 justify-center items-center">
                 <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">
                 </div>
@@ -130,27 +124,6 @@ export const Herosection = () => {
               <img className="absolute -top-7 -left-10 w-28" src="public/images/home/pin.png" alt="" />
               {date.map((item, index) => (
                 <section key={index} className='grid grid-cols-1 md:grid-cols-1 items-center '>
-                  {/* <div className={`bg-[#033D2D] col-span-1 md:col-span-4 text-white rounded-xl md:p-7 p-5 w-full h-full ${index % 2 === 0 ? 'order-2 md:order-1' : 'order-2 md:order-2'}`}>
-                    <div className="flex items-center gap-5 h-full justify-center">
-                      <div className="md:text-base text-sm font-medium flex flex-col text-center gap-5">
-                        {item.Title}
-                      </div>
-                    </div>
-                  </div> */}
-                  {/* <div className={`md:bg-[#4AF8BA] p-4 col-span-1 font-semibold ${index % 2 === 0 ? 'order-1 md:order-2 rounded-tr-3xl rounded-br-3xl' : 'order-1 md:order-1 rounded-tl-3xl rounded-bl-3xl text-right'}`}>
-                    <p className="2xl:text-base text-sm">{item.Dates}</p>
-                  </div>
-                  <div className="">
-                    <div className="">
-                      <div className="bg-[#4AF8BA] flex items-center gap-4 p-2 rounded-2xl">
-                        <div className="bg-[#033D2D] rounded-full flex items-center  p-3">
-                          <i class="fi fi-sr-calendar-clock flex items-center justify-center text-white text-xl"></i>
-                        </div>
-                        <p className="  rounded-full text-black font-medium px-4">{item.Dates}</p>
-                      </div>
-                    </div>
-
-                  </div> */}
                   <div className="md:text-xl text-center flex flex-col md:gap-3 gap-2">
                     <p className="rounded-full font-medium md:text-lg bg-[#033D2D] w-fit mx-auto px-4 p-2 text-white ">{item.Dates}</p>
                     <p className="rounded-full text-black font-medium">{item.Title}</p>
@@ -160,9 +133,6 @@ export const Herosection = () => {
             </div>
           </div>
         </section>
-        {/* <section>
-          <img src="/images/home/rename.png" className="md:w-[1000px] w-full mx-auto h-full" alt="" />
-        </section> */}
         <LastSection />
       </section>
     </>

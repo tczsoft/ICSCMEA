@@ -47,11 +47,10 @@ export const Herosection = () => {
       </section>
       <section className=" bg-white/96">
         <section className="max-w-[90rem] relative  mx-auto md:px-5 px-3">
-          <div className="md:p-40 p-20 bg-[#4AF8BA] w-fit rounded-b-[150px] absolute rounded-tr-2xl -top-5  ">
+          <div className="md:p-40 p-20 bg-[#4AF8BA] w-fit rounded-b-[150px] absolute rounded-tr-2xl -top-5">
             <div className="p-2.5 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-5">
             </div>
-            <div className="p-2.5  z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-4.5">
-            </div>
+            <div className="p-2.5  z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-4.5"> </div>
           </div>
           <section className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-5 gap-3 items-center">
             <div className="z-10">

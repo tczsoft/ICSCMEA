@@ -38,7 +38,7 @@ function About() {
                     <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/assets/Images/Herosec.png')] opacity-20" ></div>
                 </section>
                 <section className="lg:pt-0 pt-16">
-                    <section className="max-w-[90rem] relative  mx-auto lg:px-5">
+                    <section className="max-w-[90rem] relative mx-auto lg:px-5">
                         <div className="lg:p-20 p-10 bg-[#4AF8BA] w-fit rounded-b-full absolute -top-5 rounded-tr-4xl xl:block hidden">
                             <p className="text-center w-fit rounded-full font-semibold 2xl:text-3xl text-lg">About</p>
                             <div className="p-2.5 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-5">

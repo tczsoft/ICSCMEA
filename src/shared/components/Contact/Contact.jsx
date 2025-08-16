@@ -73,7 +73,7 @@ function Contact() {
                                     <label className='font-semibold text-[#03402E]' htmlFor="message">Message *</label>
                                     <textarea name="message" id='message' value={formData.message} onChange={handleChange} placeholder="Enter your message" className="w-full h-40 p-4 text-lg border-b-2 rounded-lg  bg-white border-[#00A63E]   resize-none focus:outline-none" required   ></textarea>
                                 </div>
-                                <button type="submit" className="cursor-pointer p-3 mx-auto bg-[#04412F] text-white w-fit font-semibold rounded-full  hover:bg-[#04412F] flex justify-center items-center gap-2"  >
+                                <button type="submit" className="cursor-pointer p-3 mx-auto bg-[#4AF8BA] text-black w-fit rounded-full  hover:scale-105 duration-300 flex justify-center items-center gap-2"  >
                                     {status === 'Sending...' ? 'Submitting...' : 'Send message'}
                                 </button>
                             </form>

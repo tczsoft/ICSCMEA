@@ -212,7 +212,7 @@ function Submission() {
                                     <input id="Paper_File" name="Paper_File" onChange={handleFileInputChange} type="file" accept=".pdf" className="mt-1 block w-full px-4 py-2 border-b-2 border-[#00A63E] rounded-lg" required />
                                 </div>
                                 <div className='text-center'>
-                                    <button type="submit" className="w-fit px-4 py-2 cursor-pointer bg-[#04412F] text-white font-medium rounded-full hover:bg-[#04412F]">{status === 'Sending...' ? 'Submitting...' : 'Submit Paper'}</button>
+                                    <button type="submit" className="w-fit px-4 py-2 cursor-pointer bg-[#4AF8BA] text-black  shadow-2xl rounded-full hover:scale-105 duration-300">{status === 'Sending...' ? 'Submitting...' : 'Submit Paper'}</button>
                                 </div>
                             </form>
                         </div>

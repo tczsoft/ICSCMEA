@@ -81,7 +81,7 @@ export const Herosection = () => {
           </section>
         </section>
       </section>
-      <section className="bg-white/96 py-10">
+      <section className="bg-white/96 pb-10 2xl:pt-0 pt-10">
         <section className="max-w-[90rem] mx-auto md:px-5 px-3 flex flex-col gap-5">
           <div className="flex gap-3 justify-center items-center">
             <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">
@@ -111,7 +111,7 @@ export const Herosection = () => {
         </section>
       </section>
       <section className=" flex flex-col md:gap-10  gap-10 bg-white/96">
-        <section className="  max-w-[90rem]  mx-auto md:px-5 px-3">
+        <section className="max-w-[90rem]  mx-auto md:px-5 px-3 md:pb-6 pb-3">
           <div className=" flex flex-col md:gap-5 gap-3">
             <div className="flex gap-3 justify-center items-center">
               <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">
@@ -120,7 +120,7 @@ export const Herosection = () => {
                 Key Dates
               </h1>
             </div>
-            <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 md:gap-10 gap-5 p-8 bg-[#4AF8BA] rounded-xl  relative">
+            <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 md:gap-10 gap-5 p-8 bg-[#4AF8BA] rounded-xl relative">
               <img className="absolute -top-7 -left-10 w-28" src="public/images/home/pin.png" alt="" />
               {date.map((item, index) => (
                 <section key={index} className='grid grid-cols-1 md:grid-cols-1 items-center '>

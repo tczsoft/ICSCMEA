@@ -117,7 +117,7 @@ function Editorial() {
                             </div>
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4">
                                 {highlights.map((item, index) => (
-                                    <div key={index} className="bg-white shadow-lg rounded-lg p-6 h-16   overflow-hidden hover:overflow-visible hover:h-full duration-300">
+                                    <div key={index} className="bg-white shadow-lg rounded-lg p-6 hover:scale-105 duration-300">
                                         <h3 className="md:text-xl text-lg font-semibold text-[#033D2D] mb-2">Dr. {item.title}</h3>
                                         <p className="text-gray-600 md:text-base text-sm">{item.description}</p>
                                     </div>

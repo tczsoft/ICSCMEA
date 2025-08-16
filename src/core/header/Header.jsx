@@ -118,7 +118,7 @@ const Header = () => {
                     <Link to={link.to} className={`py-4 flex    transition-all duration-300 ease-in-out lg:text-base md:text-sm justify-center items-center gap-1 text-white ${isActive(link.to) || hoveredCategory === link.label ? 'md:border-t-0 border-t-[#14AE5C] duration-300 text-[#1B1F3B]' : ''} `}
                       onClick={(e) => { if (link.dropdown) { e.preventDefault(); setHoveredCategory((prev) => (prev === link.label ? null : link.label)); } else { setMenuOpen(false); } }}   >
                       {link.label}
-                      {link.dropdown && (<i className={`fi fi-rr-angle-small-down flex items-center  transition-all duration-300 ease-in-out  rounded-full text-white ${isActive(link.to) || hoveredCategory === link.label ? 'bg-[#14AE5C] text-white rotate-180 duration-100' : ' '} `}></i>)}
+                      {link.dropdown && (<i className={`fi fi-rr-angle-small-down flex items-center mt-1 transition-all duration-300 ease-in-out  rounded-full text-white ${isActive(link.to) || hoveredCategory === link.label ? 'bg-[#14AE5C] text-white rotate-180 duration-100' : ' '} `}></i>)}
                     </Link>
                     {hoveredCategory === link.label && link.dropdown && (
                       <div className="md:absolute left-0 top-full md:w-[260px] rounded-lg md:bg-[#56AE58] bg-white transition-all duration-300 ease-in-out opacity-100 scale-y-100 origin-top  grid md:grid-cols-1 md:p-3 z-10">

@@ -61,7 +61,7 @@ import LastSection from '../Bottom/Bottom';
 function Editorial() {
     const highlights = [
         { title: "A.V.L.N. Sujith", description: "Department of Computer Science and Engineering, JNTUA University, India", },
-        { title: "Hung Nguyen", description: "Department of Information Technology, Nha Trang university, Vietnam", },
+        { title: "Hung Nguyen", description: "Department of Information Technology, Nha Trang University, Vietnam", },
         { title: "Tusar Kanti Dash", description: "Department of Electronics and Communication Engineering, C V Raman Global University, India", },
         { title: "D. Angeline Benitta", description: "Department of Computer Applications, Hindustan Institute of Technology and Science, India", },
         { title: "Samir Hallaci", description: "Department of Computer Science, Guelma University, Algeria", },

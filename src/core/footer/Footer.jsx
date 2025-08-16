@@ -7,7 +7,7 @@ const Footer = () => {
 
       <footer className=" ">
         <div className='bg-gradient-to-r from-[#0D6743] to-[#033D2D] text-white '>
-          <div className="max-w-[92rem] mx-auto px-5 lg:py-10 py-6">
+          <div className="max-w-[92rem] mx-auto px-5 lg:pt-10 pt-10  pb-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center  md:text-left mx-auto flex flex-col gap-4">
                 <h3 className="text-2xl font-bold mb-2">ICSCMEA</h3>

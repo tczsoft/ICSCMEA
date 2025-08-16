@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { toast } from 'react-toastify';
 import Bottom from '../Bottom/Bottom';
+import { Link } from 'react-router-dom';
 
 function Submission() {
 
@@ -110,14 +111,28 @@ function Submission() {
     return (
         <>
             <section className='bg-white/96'>
-                <section className="relative h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D] lg:block hidden">
+                <section className="relative lg:h-[15vh]  h-[15vh]   w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D]  ">
+                    <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/images/home/Herosec.png')] opacity-20 bg-fixed bg-center"></div>
+                    <div className="relative z-10 flex items-center justify-center h-full">
+                        <nav className="text-white text-sm md:text-base font-medium lg:mt-5 mt-12">
+                            <ol className="flex space-x-2">
+                                <li>
+                                    <a href="/" className="hover:underline">Home</a>
+                                </li>
+                                <li>/</li>
+                                <Link to="/paper-submission">
+                                    <li className="text-[#4AF8BA]">Submission</li>
+                                </Link>
+                            </ol>
+                        </nav>
+                    </div>
                     <img className="absolute -top-20 -left-20 2xl:block hidden" src="/assets/Images/point.png" alt="" />
                     <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/assets/Images/Herosec.png')] opacity-20"></div>
                 </section>
-                <section className="lg:pt-0 pt-16">
+                <section className="lg:pt-0 ">
                     <section className="max-w-[90rem] relative  mx-auto lg:px-5">
                         <div className="lg:p-20 p-10 bg-[#4AF8BA] w-fit rounded-b-full absolute -top-5 rounded-tr-4xl xl:block hidden">
-                            <p className="text-center w-fit rounded-full font-semibold 2xl:text-3xl text-lg">Scope</p>
+                            <p className="text-center w-fit rounded-full font-semibold 2xl:text-2xl text-lg">Submission</p>
                             <div className="p-2.5 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-5"></div>
                             <div className="p-2.5 z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-4.5"></div>
                         </div>

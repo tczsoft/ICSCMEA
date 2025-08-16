@@ -137,12 +137,12 @@ function Editorial() {
                         </section>
                     </section>
                 </section> */}
-                <Common heading="Tracks" path="Tracks" paths="/tracks" content="Our conference features a diverse range of technical tracks designed to foster innovation, encourage interdisciplinary collaboration, and address real-world challenges. These tracks bring together researchers, academicians, and industry professionals to share cutting-edge developments, exchange ideas, and explore emerging trends. By covering both foundational theories and practical applications, ICSCMEA 2026 serves as a catalyst for advancing knowledge and driving impactful technological progress." />
+                <Common heading="Tracks" path="Tracks" paths="/conference-tracks" content="Our conference features a diverse range of technical tracks designed to foster innovation, encourage interdisciplinary collaboration, and address real-world challenges. These tracks bring together researchers, academicians, and industry professionals to share cutting-edge developments, exchange ideas, and explore emerging trends. By covering both foundational theories and practical applications, ICSCMEA 2026 serves as a catalyst for advancing knowledge and driving impactful technological progress." />
                 <section>
                     <div className="md:py-12 py-6 px-6">
                         <div className="max-w-[90rem] mx-auto text-center">
                             <div className='flex items-center gap-2 justify-center md:mb-10 mb-5'>
-                                <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">   </div>
+                                {/* <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">   </div> */}
                                 <h2 className="md:text-2xl text-xl font-semibold ">Conference Tracks</h2>
                             </div>
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4">

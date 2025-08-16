@@ -73,7 +73,7 @@ function Scope() {
                     <div className="md:py-12 py-6 px-6 ">
                           <div className="max-w-[90rem] mx-auto text-center">
                             <div className='flex items-center gap-2 justify-center md:mb-10 mb-5'>
-                                <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">   </div>
+                                {/* <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">   </div> */}
                                 <h2 className="md:text-2xl text-xl font-semibold ">Vision of the Conference</h2>
                             </div>
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4">

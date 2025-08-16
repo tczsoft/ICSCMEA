@@ -115,7 +115,7 @@ function Editorial() {
                     <div className="md:py-12 py-6 px-6">
                         <div className="max-w-[70rem] mx-auto text-center">
                             <div className='flex items-center gap-2 justify-center md:mb-10 mb-5'>
-                                <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">   </div>
+                                {/* <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">   </div> */}
                                 <h2 className="md:text-2xl text-xl font-semibold">Our Board of Editors</h2>
                             </div>
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 md:gap-4 gap-4 border bg-[#04402F] rounded-xl p-4">

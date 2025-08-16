@@ -24,10 +24,12 @@ export const Herosection = () => {
         <img className="absolute -top-20 -left-20 2xl:block hidden" src="/images/home/point.png" alt="" />
         <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/images/home/Herosec.png')] opacity-20 bg-fixed"></div>
         <div className="py-20 flex flex-col justify-center 2xl:gap-20 xl:gap-10 gap-5 h-full">
-          <div className="relative md:py-5 py-3 bg-[#4AF8BA] max-w-[90rem] mx-auto  rounded-full   px-3">
-            <Marquee pauseOnHover direction="right">
-              <p className=" text-black overflow-hidden   font-bold md:text-xl uppercase">International Conference on Smart Computational Methods and Emerging Applications <span className="animate-spin inline-block text-white"> ✦ </span>  Intelligent Systems <span className="animate-spin inline-block text-white"> ✦ </span>  Advanced Algorithms <span className="animate-spin inline-block text-white"> ✦ </span> AI & Emerging Tech <span className="animate-spin inline-block text-white"> ✦ </span>  Global Innovations  <span className="animate-spin inline-block text-white"> ✦ </span>  </p>
-            </Marquee>
+          <div className="md:px-5 px-3">
+            <div className="relative md:py-5 py-3 bg-[#4AF8BA] max-w-[90rem] mx-auto  rounded-full px-3">
+              <Marquee pauseOnHover direction="right">
+                <p className=" text-black overflow-hidden   font-bold md:text-xl text-sm uppercase"> International Conference on Smart Computational Methods and Emerging Applications <span className="animate-spin inline-block text-[#04402F]"> ✦ </span>  Intelligent Systems <span className="animate-spin inline-block text-[#04402F]"> ✦ </span>  Advanced Algorithms <span className="animate-spin inline-block text-[#04402F]"> ✦ </span> AI & Emerging Tech <span className="animate-spin inline-block text-[#04402F]"> ✦ </span>  Global Innovations  <span className="animate-spin inline-block text-[#04402F] mr-1"> ✦ </span>  </p>
+              </Marquee>
+            </div>
           </div>
           <div className="relative z-10 grid grid-cols-1 2xl:grid-cols-2 max-w-[90rem] gap-10 lg:py-0 py-10 mx-auto items-center px-4">
             <div className="lg:ml-auto mx-auto flex flex-col gap-6">
@@ -58,8 +60,8 @@ export const Herosection = () => {
             </div>
             <div className='flex flex-col md:gap-4 gap-2 lg:my-0  2xl:col-span-2'>
               <div className="flex gap-3 justify-center items-center">
-                <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">
-                </div>
+                {/* <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">
+                </div> */}
                 <h1 className="text-center w-fit rounded-full font-semibold lg:text-3xl text-lg">About</h1>
               </div>
               <div className="text-justify lg:text-lg md:text-base text-sm leading-7 flex flex-col gap-4">
@@ -83,8 +85,8 @@ export const Herosection = () => {
       <section className="bg-white/96 pb-10 2xl:pt-0 pt-10">
         <section className="max-w-[90rem] mx-auto md:px-5 px-3 flex flex-col gap-5">
           <div className="flex gap-3 justify-center items-center">
-            <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">
-            </div>
+            {/* <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">
+            </div> */}
             <h1 className="text-center w-fit rounded-full font-semibold lg:text-3xl text-lg">
               Scope of the Conference
             </h1>
@@ -113,8 +115,8 @@ export const Herosection = () => {
         <section className="max-w-[90rem]  mx-auto md:px-5 px-3 md:pb-6 pb-3">
           <div className=" flex flex-col md:gap-5 gap-3">
             <div className="flex gap-3 justify-center items-center">
-              <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">
-              </div>
+              {/* <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">
+              </div> */}
               <h1 className="text-center w-fit rounded-full font-semibold lg:text-3xl text-lg">
                 Key Dates
               </h1>

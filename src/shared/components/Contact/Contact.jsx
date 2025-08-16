@@ -34,7 +34,7 @@ function Contact() {
                                     <a href="/" className="hover:underline">Home</a>
                                 </li>
                                 <li>/</li>
-                                <Link to="/paper-submission">
+                                <Link to="/contact">
                                     <li className="text-[#4AF8BA]">Contact</li>
                                 </Link>
                             </ol>

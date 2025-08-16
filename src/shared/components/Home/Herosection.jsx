@@ -24,9 +24,9 @@ export const Herosection = () => {
         <img className="absolute -top-20 -left-20 2xl:block hidden" src="/images/home/point.png" alt="" />
         <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/images/home/Herosec.png')] opacity-20 bg-fixed"></div>
         <div className="py-20 flex flex-col justify-center 2xl:gap-20 xl:gap-10 gap-5 h-full">
-          <div className="relative md:py-5 py-3 bg-[#4AF8BA] max-w-[90rem] mx-auto  rounded-full">
+          <div className="relative md:py-5 py-3 bg-[#4AF8BA] max-w-[90rem] mx-auto  rounded-full   px-3">
             <Marquee pauseOnHover direction="right">
-              <p className=" text-black overflow-hidden  font-bold md:text-xl uppercase">International Conference on Smart Computational Methods and Emerging Applications <span className="animate-spin inline-block text-white"> ✦ </span>  Intelligent Systems <span className="animate-spin inline-block text-white"> ✦ </span>  Advanced Algorithms <span className="animate-spin inline-block text-white"> ✦ </span> AI & Emerging Tech <span className="animate-spin inline-block text-white"> ✦ </span>  Global Innovations  <span className="animate-spin inline-block text-white"> ✦ </span>  </p>
+              <p className=" text-black overflow-hidden   font-bold md:text-xl uppercase">International Conference on Smart Computational Methods and Emerging Applications <span className="animate-spin inline-block text-white"> ✦ </span>  Intelligent Systems <span className="animate-spin inline-block text-white"> ✦ </span>  Advanced Algorithms <span className="animate-spin inline-block text-white"> ✦ </span> AI & Emerging Tech <span className="animate-spin inline-block text-white"> ✦ </span>  Global Innovations  <span className="animate-spin inline-block text-white"> ✦ </span>  </p>
             </Marquee>
           </div>
           <div className="relative z-10 grid grid-cols-1 2xl:grid-cols-2 max-w-[90rem] gap-10 lg:py-0 py-10 mx-auto items-center px-4">
@@ -47,7 +47,7 @@ export const Herosection = () => {
       </section>
       <section className=" bg-white/96">
         <section className="max-w-[90rem] relative  mx-auto md:px-5 px-3">
-          <div className="md:p-40 p-20 bg-[#4AF8BA] w-fit rounded-b-full absolute -top-5 rounded-tr-4xl">
+          <div className="md:p-40 p-20 bg-[#4AF8BA] w-fit rounded-b-[150px] absolute rounded-tr-2xl -top-5  ">
             <div className="p-2.5 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-5">
             </div>
             <div className="p-2.5  z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-4.5">
@@ -125,7 +125,7 @@ export const Herosection = () => {
               {date.map((item, index) => (
                 <section key={index} className='grid grid-cols-1 md:grid-cols-1 items-center'>
                   <div className="md:text-xl text-center flex flex-col md:gap-3 gap-2">
-                    <p className="rounded-full font-medium md:text-lg bg-[#033D2D] w-fit mx-auto px-4 p-2 text-white ">{item.Dates}</p>
+                    <p className="rounded-full font-medium md:text-lg bg-[#033D2D] w-fit mx-auto px-4 p-2 text-white">{item.Dates}</p>
                     <p className="rounded-full text-black font-medium">{item.Title}</p>
                   </div>
                 </section>

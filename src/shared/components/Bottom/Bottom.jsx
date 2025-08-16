@@ -8,11 +8,10 @@ function LastSection() {
                 <div className="max-w-[90rem]  mx-auto md:px-5 px-3 pt-3 ">
                     <section className="flex flex-col gap-10">
                         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 items-center text-white'>
-                            <div className="bg-[#033D2D] md:p-10 p-5 w-full h-full transform  flex items-center justify-center rounded-xl relative">
-                                <div className="md:p-3 p-2 bg-[#4AF8BA] w-fit rounded-b-full absolute -top-3 left-10 rounded-tr-xl">
-                                    <div className="p-1.5  rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-3">
-                                    </div>
-                                    <div className="p-1.5  z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-3">
+                            <div className="bg-[#033D2D] md:p-10 p-5 w-full h-full transform flex items-center justify-center rounded-xl relative">
+                                <div className="md:p-3 p-2 bg-[#4AF8BA] w-fit   absolute -top-2 left-10  rounded-tr-xl rounded-b-4xl">
+                                    <div className="p-1  rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-2"> </div>
+                                    <div className="p-1  z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-2">
                                     </div>
                                     <i class="fi fi-ss-marker text-[#033D2D] flex items-center md:text-base text-xs"></i>
                                 </div>
@@ -21,9 +20,9 @@ function LastSection() {
                                 </div>
                             </div>
                             <div className="bg-[#033D2D] md:p-10 p-5 w-full h-full transform flex items-center justify-center  relative rounded-xl">
-                                <div className="md:p-3 p-2 bg-[#4AF8BA] w-fit rounded-b-full absolute -top-3 left-10 rounded-tr-xl">
-                                    <div className="p-1.5 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-3"> </div>
-                                    <div className="p-1.5 z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-3"> </div>
+                                <div className="md:p-3 p-2 bg-[#4AF8BA] w-fit   absolute -top-2 left-10  rounded-tr-xl rounded-b-4xl">
+                                    <div className="p-1 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-2"> </div>
+                                    <div className="p-1 z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-2"> </div>
                                     <i class="fi fi-sr-calendar-day flex items-center text-[#033D2D] md:text-base text-xs"></i>
                                 </div>
                                 <div className=" flex flex-col gap-5">
@@ -31,10 +30,10 @@ function LastSection() {
                                 </div>
                             </div>
                             <div className="bg-[#033D2D] md:p-10 p-5 w-full h-full transform flex items-center justify-center relative rounded-xl">
-                                <div className="md:p-3 p-2 bg-[#4AF8BA] w-fit rounded-b-full absolute -top-3 left-10 rounded-tr-xl">
-                                    <div className="p-1.5 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-3">
+                                <div className="md:p-3 p-2 bg-[#4AF8BA] w-fit   absolute -top-2 left-10  rounded-tr-xl rounded-b-4xl">
+                                    <div className="p-1 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-2">
                                     </div>
-                                    <div className="p-1.5 z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-3">
+                                    <div className="p-1 z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-2">
                                     </div>
                                     <i class="fi fi-sr-envelope text-[#033D2D] flex items-center md:text-base text-xs"></i>
                                 </div>

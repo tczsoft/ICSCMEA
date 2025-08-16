@@ -52,7 +52,7 @@ function Contact() {
                         </div>
                     </section>
                 </section>
-                <section className='md:mt-0 '>  <div className="flex flex-col items-center py-10">
+                <section className='md:mt-0'><div className="flex flex-col items-center py-10">
                     <div className="grid md:grid-cols-1 gap-5 grid-cols-1 px-6 w-full max-w-[40rem]">
                         <div className="flex flex-col gap-4 md:gap-6 md:px-9  p-4 md:p-8 rounded-lg shadow-lg w-full bg-white border-[#FEDE68]">
                             <h1 className="md:text-xl text-lg font-extrabold text-[#033F2E] text-center">Get in Touch</h1>

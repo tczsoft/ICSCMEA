@@ -24,9 +24,9 @@ export const Herosection = () => {
         <img className="absolute -top-20 -left-20 2xl:block hidden" src="/images/home/point.png" alt="" />
         <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/images/home/Herosec.png')] opacity-20 bg-fixed"></div>
         <div className="py-20 flex flex-col justify-center 2xl:gap-20 xl:gap-10 gap-5 h-full">
-          <div className="relative md:py-5 py-3 bg-[#4AF8BA] 2xl:w-1/2 w-3/4 rounded-tr-full rounded-br-full">
+          <div className="relative md:py-5 py-3 bg-[#4AF8BA] max-w-[90rem] mx-auto  rounded-full">
             <Marquee pauseOnHover direction="right">
-              <p className=" text-black overflow-hidden  font-bold md:text-xl uppercase">International Conference on Smart Computational Methods and Emerging Applications <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  Intelligent Systems <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  Advanced Algorithms <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span> AI & Emerging Tech <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  Global Innovations  <span className="animate-spin inline-block text-[#033D2D]"> ✦ </span>  </p>
+              <p className=" text-black overflow-hidden  font-bold md:text-xl uppercase">International Conference on Smart Computational Methods and Emerging Applications <span className="animate-spin inline-block text-white"> ✦ </span>  Intelligent Systems <span className="animate-spin inline-block text-white"> ✦ </span>  Advanced Algorithms <span className="animate-spin inline-block text-white"> ✦ </span> AI & Emerging Tech <span className="animate-spin inline-block text-white"> ✦ </span>  Global Innovations  <span className="animate-spin inline-block text-white"> ✦ </span>  </p>
             </Marquee>
           </div>
           <div className="relative z-10 grid grid-cols-1 2xl:grid-cols-2 max-w-[90rem] gap-10 lg:py-0 py-10 mx-auto items-center px-4">

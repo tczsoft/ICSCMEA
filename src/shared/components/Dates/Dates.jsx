@@ -125,14 +125,6 @@ function Editorial() {
                                 <div className="bg-[#4AF8BA] p-3 rounded-full w-fit"> </div>
                                 <h2 className="md:text-2xl text-xl font-semibold ">Important Dates</h2>
                             </div>
-                            {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4">
-                                {highlights.map((item, index) => (
-                                    <div key={index} className="bg-white shadow-lg rounded-lg p-6 border-t-4 border-green-600 hover:scale-105 transition-transform duration-300">
-                                        <h3 className="md:text-xl text-lg font-semibold text-[#033D2D] mb-2">{item.title}</h3>
-                                        <p className="text-gray-600 md:text-base text-sm">{item.description}</p>
-                                    </div>
-                                ))}
-                            </div> */}
                             <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 md:gap-10 gap-5 p-8 bg-[#4AF8BA] rounded-xl relative">
                                 <img className="absolute -top-7 -left-10 w-28" src="public/images/home/pin.png" alt="" />
                                 {date.map((item, index) => (
@@ -147,36 +139,6 @@ function Editorial() {
                         </div>
                     </div>
                 </section>
-                {/* <section className="max-w-[90rem] mx-auto px-3">
-                    <div className='flex items-center gap-3 mb-3 md:mb-6 justify-center'>
-                        <div className="bg-[#4AF8BA] p-3 rounded-full w-fit"> </div>
-                        <h1 className="md:text-2xl text-xl font-semibold">Our Mission</h1>
-                    </div>
-                    <div className="max-w-4xl mx-auto text-gray-700   leading-relaxed space-y-6 md:text-base text-sm">
-                        <p className='text-center md:text-lg'>
-                            At the <strong> International Conference on Smart Computational Methods and Emerging Applications </strong>,
-                            our mission is to advance innovation,  foster collaboration, and bridge the gap
-                            between theory and real-world solutions in the field of computational intelligence.
-                        </p>
-                        <ul className="list-disc list-outside space-y-2 pl-6 md:text-lg">
-                            <li>
-                                Promote cutting-edge research in smart algorithms, data-driven methods, and emerging technologies.
-                            </li>
-                            <li>
-                                Create a global platform for academics, researchers, and industry experts to exchange ideas and best practices.
-                            </li>
-                            <li>
-                                Support the development and deployment of intelligent solutions that address real-world challenges.
-                            </li>
-                            <li>
-                                Empower young researchers and innovators through engagement, mentorship, and recognition.
-                            </li>
-                            <li>
-                                Encourage interdisciplinary dialogue to fuel impactful scientific discovery and practical implementation.
-                            </li>
-                        </ul>
-                    </div>
-                </section> */}
                 <LastSection />
             </section>
 

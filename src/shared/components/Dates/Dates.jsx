@@ -57,6 +57,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Marquee from 'react-fast-marquee'
 import LastSection from '../Bottom/Bottom';
+import Common from '../Common/Common';
 
 function Editorial() {
     const date = [
@@ -68,7 +69,7 @@ function Editorial() {
     return (
         <>
             <section className='bg-white/96'>
-                <section className="relative h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D] lg:block hidden">
+                {/* <section className="relative h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D] lg:block hidden">
                     <img className="absolute -top-20 -left-20 2xl:block hidden" src="/assets/Images/point.png" alt="" />
                     <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/assets/Images/Herosec.png')] opacity-20"></div>
                 </section>
@@ -84,13 +85,15 @@ function Editorial() {
                             <div className='col-span-1 xl:block hidden'></div>
                             <div className='flex flex-col md:gap-4 gap-2 col-span-4 md:my-10 my-5'>
                                 <div className="text-justify md:text-lg text-sm leading-7 flex flex-col gap-4">
-                                    <p className="px-3">The International Conference on Smart Computational Methods and Emerging Applications will be held on 28<sup>th</sup> April, 2026. This prestigious global event will bring together scholars, researchers, technologists, and industry professionals from around the world to exchange groundbreaking ideas and present high-quality research. Over the course of the conference, participants will engage in insightful discussions, collaborative sessions, and presentations that inspire innovation, address real-world challenges, and contribute to the advancement of global knowledge in computational methods and emerging applications.
+                                    <p className="px-3">
+                                    The International Conference on Smart Computational Methods and Emerging Applications will be held on 28<sup>th</sup> April, 2026. This prestigious global event will bring together scholars, researchers, technologists, and industry professionals from around the world to exchange groundbreaking ideas and present high-quality research. Over the course of the conference, participants will engage in insightful discussions, collaborative sessions, and presentations that inspire innovation, address real-world challenges, and contribute to the advancement of global knowledge in computational methods and emerging applications.
                                     </p>
                                 </div>
                             </div>
                         </section>
                     </section>
-                </section>
+                </section> */}
+                <Common heading="Dates" path="Dates" paths="/dates" content="   The International Conference on Smart Computational Methods and Emerging Applications will be held on April 28, 2026. This prestigious global event will bring together scholars, researchers, technologists, and industry professionals from around the world to exchange groundbreaking ideas and present high-quality research. Over the course of the conference, participants will engage in insightful discussions, collaborative sessions, and presentations that inspire innovation, address real-world challenges, and contribute to the advancement of global knowledge in computational methods and emerging applications." />
                 <section>
                     <div className="md:py-12 py-6 px-6">
                         <div className="max-w-[50rem] mx-auto text-center">

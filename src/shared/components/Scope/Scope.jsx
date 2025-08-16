@@ -68,10 +68,10 @@ function Scope() {
                         </section>
                     </section>
                 </section> */}
-                <Common heading="Scope" content="ICSCMEA 2026 covers innovations in intelligent computational methods and their applications across AI, machine learning, data analytics, cloud computing, high-performance computing, and emerging interdisciplinary fields. The conference provides a platform for researchers and industry experts to exchange ideas, address challenges, and explore future trends." />
+                <Common heading="Scope" path="Scope" paths="/scope" content="ICSCMEA 2026 covers innovations in intelligent computational methods and their applications across AI, machine learning, data analytics, cloud computing, high-performance computing, and emerging interdisciplinary fields. The conference provides a platform for researchers and industry experts to exchange ideas, address challenges, and explore future trends." />
                 <section>
                     <div className="md:py-12 py-6 px-6 ">
-                        <div className="max-w-[90rem] mx-auto text-center">
+                          <div className="max-w-[90rem] mx-auto text-center">
                             <div className='flex items-center gap-2 justify-center md:mb-10 mb-5'>
                                 <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">   </div>
                                 <h2 className="md:text-2xl text-xl font-semibold ">Vision of the Conference</h2>

@@ -57,6 +57,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Marquee from 'react-fast-marquee'
 import LastSection from '../Bottom/Bottom';
+import Common from '../Common/Common';
 
 function Editorial() {
     const highlights = [
@@ -112,7 +113,7 @@ function Editorial() {
     return (
         <>
             <section className='bg-white/96'>
-                <section className="relative h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D] lg:block hidden">
+                {/* <section className="relative h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D] lg:block hidden">
                     <img className="absolute -top-20 -left-20 2xl:block hidden" src="/assets/Images/point.png" alt="" />
                     <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/assets/Images/Herosec.png')] opacity-20"></div>
                 </section>
@@ -128,13 +129,15 @@ function Editorial() {
                             <div className='col-span-1 xl:block hidden'></div>
                             <div className='flex flex-col md:gap-4 gap-2 col-span-4 md:my-10 my-5'>
                                 <div className="text-justify md:text-lg text-sm leading-7 flex flex-col gap-4">
-                                    <p className="px-3">Our conference features a diverse range of technical tracks designed to foster innovation, encourage interdisciplinary collaboration, and address real-world challenges. These tracks bring together researchers, academicians, and industry professionals to share cutting-edge developments, exchange ideas, and explore emerging trends. By covering both foundational theories and practical applications, ICSCMEA 2026 serves as a catalyst for advancing knowledge and driving impactful technological progress.
+                                    <p className="px-3">
+                                    Our conference features a diverse range of technical tracks designed to foster innovation, encourage interdisciplinary collaboration, and address real-world challenges. These tracks bring together researchers, academicians, and industry professionals to share cutting-edge developments, exchange ideas, and explore emerging trends. By covering both foundational theories and practical applications, ICSCMEA 2026 serves as a catalyst for advancing knowledge and driving impactful technological progress.
                                     </p>
                                 </div>
                             </div>
                         </section>
                     </section>
-                </section>
+                </section> */}
+                <Common heading="Tracks" path="Tracks" paths="/tracks" content="Our conference features a diverse range of technical tracks designed to foster innovation, encourage interdisciplinary collaboration, and address real-world challenges. These tracks bring together researchers, academicians, and industry professionals to share cutting-edge developments, exchange ideas, and explore emerging trends. By covering both foundational theories and practical applications, ICSCMEA 2026 serves as a catalyst for advancing knowledge and driving impactful technological progress." />
                 <section>
                     <div className="md:py-12 py-6 px-6">
                         <div className="max-w-[90rem] mx-auto text-center">

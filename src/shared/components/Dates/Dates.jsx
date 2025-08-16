@@ -59,38 +59,11 @@ import Marquee from 'react-fast-marquee'
 import LastSection from '../Bottom/Bottom';
 
 function Editorial() {
-    const highlights = [
-        {
-            title: "22-07-2025",
-            description: "Full Paper Submission Deadline",
-        },
-        {
-            title: "22-07-2025",
-            description: "Notification of Decision",
-        },
-        {
-            title: "22-07-2025",
-            description: "Deadline for Submitting Revised Full Paper",
-        },
-        {
-            title: "22-07-2025",
-            description: "Notification of Acceptance",
-        },
-        {
-            title: "22-07-2025",
-            description: "Camera-Ready Paper Submission",
-        },
-        {
-            title: "22-07-2025",
-            description: "Last Date for Registration",
-        },
-    ];
-
     const date = [
-        { Dates: '22-07-2025', Title: 'Full Paper Submission' },
-        { Dates: '29-07-2025', Title: 'Notification of Acceptance' },
-        { Dates: '05-08-2025', Title: 'Final Camera Ready Submission' },
-        { Dates: '12-08-2025', Title: 'Conference Date' },
+        { Dates: '03-04-2026', Title: 'Full Paper Submission' },
+        { Dates: '09-04-2026', Title: 'Notification of Acceptance' },
+        { Dates: '17-04-2026', Title: 'Final Camera Ready Submission' },
+        { Dates: '28-04-2026', Title: 'Conference Date' },
     ];
     return (
         <>

@@ -13,10 +13,10 @@ export const Herosection = () => {
     { text: "Interdisciplinary Innovations", Icon: RiTeamLine },
   ];
   const date = [
-    { Dates: '22-07-2025', Title: 'Full Paper Submission' },
-    { Dates: '29-07-2025', Title: 'Notification of Acceptance' },
-    { Dates: '05-08-2025', Title: 'Final Camera Ready Submission' },
-    { Dates: '12-08-2025', Title: 'Conference Date' },
+    { Dates: '03-04-2026', Title: 'Full Paper Submission' },
+    { Dates: '09-04-2026', Title: 'Notification of Acceptance' },
+    { Dates: '17-04-2026', Title: 'Final Camera Ready Submission' },
+    { Dates: '28-04-2026', Title: 'Conference Date' },
   ];
   return (
     <>
@@ -123,7 +123,7 @@ export const Herosection = () => {
             <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 md:gap-10 gap-5 p-8 bg-[#4AF8BA] rounded-xl relative">
               <img className="absolute -top-7 -left-10 w-28" src="public/images/home/pin.png" alt="" />
               {date.map((item, index) => (
-                <section key={index} className='grid grid-cols-1 md:grid-cols-1 items-center '>
+                <section key={index} className='grid grid-cols-1 md:grid-cols-1 items-center'>
                   <div className="md:text-xl text-center flex flex-col md:gap-3 gap-2">
                     <p className="rounded-full font-medium md:text-lg bg-[#033D2D] w-fit mx-auto px-4 p-2 text-white ">{item.Dates}</p>
                     <p className="rounded-full text-black font-medium">{item.Title}</p>

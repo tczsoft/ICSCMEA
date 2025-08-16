@@ -121,7 +121,7 @@ function Submission() {
                                 </li>
                                 <li>/</li>
                                 <Link to="/paper-submission">
-                                    <li className="text-[#4AF8BA]">Submission</li>
+                                    <li className="text-[#4AF8BA]">Paper Submission</li>
                                 </Link>
                             </ol>
                         </nav>

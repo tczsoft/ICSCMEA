@@ -25,7 +25,7 @@ function Contact() {
     return (
         <>
             <section className='bg-white/96'>
-                <section className="relative lg:h-[15vh] h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D]" >
+                <section className="relative lg:h-[15vh] h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D]">
                     <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/images/home/Herosec.png')] opacity-20 bg-fixed bg-center"></div>
                     <div className="relative z-10 flex items-center justify-center h-full">
                         <nav className="text-white text-sm md:text-base font-medium lg:mt-5 mt-12">

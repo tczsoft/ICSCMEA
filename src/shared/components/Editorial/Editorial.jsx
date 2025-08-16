@@ -118,10 +118,10 @@ function Editorial() {
                                 {/* <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">   </div> */}
                                 <h2 className="md:text-2xl text-xl font-semibold">Our Board of Editors</h2>
                             </div>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 md:gap-4 gap-4 border bg-[#04402F] rounded-xl p-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 md:gap-4 gap-4 border bg-[#04402F] rounded-xl p-5">
                                 {highlights.map((item, index) => (
-                                    <div key={index} className="bg-white w-full p-3 text-left rounded-lg">
-                                        <h3 className="md:text-base text-base font-semibold text-[#033D2D]">Dr. {item.title}, <span className=' text-black md:text-sm text-sm'>{item.description}</span></h3>
+                                    <div key={index} className="  w-full  text-left rounded-lg">
+                                        <h3 className="md:text-base text-base font-semibold text-white">Dr. {item.title}, <span className=' text-white md:text-sm text-sm'>{item.description}</span></h3>
                                         {/* <p className="text-gray-600 md:text-base text-sm">{item.description}</p> */}
                                     </div>
                                 ))}

@@ -43,7 +43,7 @@ export const Herosection = () => {
                 </Link>
               </div>
             </div>
-            <img src="public/images/home/rename.jpg" className="rounded-2xl 2xl:block hidden" alt="" />
+            <img src="/images/home/google.jfif" className="rounded-2xl 2xl:block hidden" alt="" />
           </div>
         </div>
       </section>

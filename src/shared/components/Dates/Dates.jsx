@@ -122,7 +122,7 @@ function Editorial() {
                     <div className="md:py-12 py-6 px-6">
                         <div className="max-w-[50rem] mx-auto text-center">
                             <div className='flex items-center gap-2 justify-center md:mb-10 mb-5'>
-                                <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">   </div>
+                                <div className="bg-[#4AF8BA] p-3 rounded-full w-fit"> </div>
                                 <h2 className="md:text-2xl text-xl font-semibold ">Important Dates</h2>
                             </div>
                             {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4">
@@ -133,12 +133,12 @@ function Editorial() {
                                     </div>
                                 ))}
                             </div> */}
-                            <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 md:gap-10 gap-5 p-8 bg-[#4AF8BA] rounded-xl  relative">
+                            <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 md:gap-10 gap-5 p-8 bg-[#4AF8BA] rounded-xl relative">
                                 <img className="absolute -top-7 -left-10 w-28" src="public/images/home/pin.png" alt="" />
                                 {date.map((item, index) => (
-                                    <section key={index} className='grid grid-cols-1 md:grid-cols-1 items-center '>
+                                    <section key={index} className='grid grid-cols-1 md:grid-cols-1 items-center'>
                                         <div className="md:text-xl text-center flex flex-col md:gap-3 gap-2">
-                                            <p className="rounded-full font-medium md:text-lg bg-[#033D2D] w-fit mx-auto px-4 p-2 text-white ">{item.Dates}</p>
+                                            <p className="rounded-full font-medium md:text-lg bg-[#033D2D] w-fit mx-auto px-4 p-2 text-white">{item.Dates}</p>
                                             <p className="rounded-full text-black font-medium">{item.Title}</p>
                                         </div>
                                     </section>

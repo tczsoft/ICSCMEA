@@ -39,13 +39,13 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'etcse.conference@gmail.com';
-    $mail->Password   = 'fqok akzm khdu epgw';
+    $mail->Username   = 'info.icscmea@gmail.com';
+    $mail->Password   = 'npay jmhr miuq hbmo';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
-    $mail->setFrom('etcse.conference@gmail.com', 'Paper Submission System');
-    $mail->addAddress('etcse.conference@gmail.com', 'Paper Submissions');
+    $mail->setFrom('info.icscmea@gmail.com', 'Paper Submission System');
+    $mail->addAddress('info.icscmea@gmail.com', 'Paper Submissions');
 
     $mail->addReplyTo($_POST['Email_Address'], $_POST['Author_FUll_Name']);
 

@@ -33,7 +33,7 @@ function Submission() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus('Sending...');
-        const journalName = 'icetcse';
+        const journalName = 'icscmea';
         // Generate unique ID: journalName + YYYYMMDD + HHMMSS
         const now = new Date();
         const dateStr = now.toISOString().slice(0, 10).replace(/-/g, ''); // YYYYMMDD
@@ -56,7 +56,7 @@ function Submission() {
             googleSheetsParams.append('Email_Address', formData.Email_Address);
             googleSheetsParams.append('Institution_Name', formData.Institution_Name);
             googleSheetsParams.append('Paper_Track', formData.Paper_Track);
-            const mailPromise = fetch('http://192.168.1.30:5173/ICSCME/send_mail.php', {
+            const mailPromise = fetch('http://icscmea.com/api/send_mail.php', {
                 method: 'POST',
                 body: formDataToSend,
             });

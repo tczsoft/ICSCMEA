@@ -13,9 +13,6 @@ const Header = () => {
     const onScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-
-
-
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);

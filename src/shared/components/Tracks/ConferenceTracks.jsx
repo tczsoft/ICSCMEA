@@ -128,7 +128,7 @@ function Editorial() {
                             <div className='col-span-1 xl:block hidden'></div>
                             <div className='flex flex-col md:gap-4 gap-2 col-span-4 md:my-10 my-5'>
                                 <div className="text-justify md:text-lg text-sm leading-7 flex flex-col gap-4">
-                                    <p className="px-3">Our conference features a diverse range of technical tracks designed to foster innovation, encourage interdisciplinary collaboration, and address real-world challenges. These tracks bring together researchers, academicians, and industry professionals to share cutting-edge developments, exchange ideas, and explore emerging trends. By covering both foundational theories and practical applications, ICSCMEA 2025 serves as a catalyst for advancing knowledge and driving impactful technological progress.
+                                    <p className="px-3">Our conference features a diverse range of technical tracks designed to foster innovation, encourage interdisciplinary collaboration, and address real-world challenges. These tracks bring together researchers, academicians, and industry professionals to share cutting-edge developments, exchange ideas, and explore emerging trends. By covering both foundational theories and practical applications, ICSCMEA 2026 serves as a catalyst for advancing knowledge and driving impactful technological progress.
                                     </p>
                                 </div>
                             </div>

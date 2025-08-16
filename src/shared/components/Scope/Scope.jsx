@@ -60,7 +60,7 @@ function Scope() {
                             <div className='col-span-1 xl:block hidden'>  </div>
                             <div className='flex flex-col md:gap-4 gap-2 col-span-4 md:my-10 my-5'>
                                 <div className="text-justify md:text-lg text-sm leading-7 flex flex-col gap-4">
-                                    <p className="px-3">ICSCMEA 2025 covers innovations in intelligent computational methods and their applications across AI, machine learning, data analytics, cloud computing, high-performance computing, and emerging interdisciplinary fields. The conference provides a platform for researchers and industry experts to exchange ideas, address challenges, and explore future trends. </p>
+                                    <p className="px-3">ICSCMEA 2026 covers innovations in intelligent computational methods and their applications across AI, machine learning, data analytics, cloud computing, high-performance computing, and emerging interdisciplinary fields. The conference provides a platform for researchers and industry experts to exchange ideas, address challenges, and explore future trends. </p>
                                 </div>
                             </div>
                         </section>

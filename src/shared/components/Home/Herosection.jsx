@@ -67,7 +67,7 @@ export const Herosection = () => {
                 <p className="">
                   The International Conference on Smart Computational Methods and Emerging Applications serves as a premier interdisciplinary platform for scholars, researchers, practitioners, and educators to present and discuss the latest innovations, trends, and challenges in the field of intelligent computational systems and their transformative applications.
                 </p>
-                <p className="">ICSCMEA 2025 aims to bring together leading minds from academia, industry, and government to exchange knowledge on the advancement of computational intelligence, data-driven methodologies, and next-generation technologies. The conference fosters collaboration across disciplines including Artificial Intelligence, Machine Learning, Data Science, Cyber-Physical Systems, Internet of Things (IoT), Quantum Computing, Robotics, Cloud and Edge Computing, and many more.
+                <p className="">ICSCMEA 2026 aims to bring together leading minds from academia, industry, and government to exchange knowledge on the advancement of computational intelligence, data-driven methodologies, and next-generation technologies. The conference fosters collaboration across disciplines including Artificial Intelligence, Machine Learning, Data Science, Cyber-Physical Systems, Internet of Things (IoT), Quantum Computing, Robotics, Cloud and Edge Computing, and many more.
                 </p>
               </div>
               <div className="md:mx-0 mx-auto">

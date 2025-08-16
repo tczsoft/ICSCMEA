@@ -113,16 +113,16 @@ function Editorial() {
                 <Common heading="Editorial" path="Editorial" paths="/editorial" content="Our Editorial Board comprises eminent scholars, researchers, and industry leaders from across the globe, dedicated to fostering rigorous peer review, promoting interdisciplinary collaboration, and ensuring the dissemination of high-quality research. Together, we strive to create an environment that inspires innovation, addresses real-world challenges, and advances the global knowledge ecosystem." />
                 <section>
                     <div className="md:py-12 py-6 px-6">
-                        <div className="max-w-[90rem] mx-auto text-center">
+                        <div className="max-w-[70rem] mx-auto text-center">
                             <div className='flex items-center gap-2 justify-center md:mb-10 mb-5'>
                                 <div className="bg-[#4AF8BA] p-3 rounded-full w-fit">   </div>
                                 <h2 className="md:text-2xl text-xl font-semibold">Our Board of Editors</h2>
                             </div>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 md:gap-4 gap-4 border bg-[#04402F] rounded-xl p-4">
                                 {highlights.map((item, index) => (
-                                    <div key={index} className="bg-white shadow-lg border-t-4 border-green-600 rounded-lg p-6 hover:scale-105 duration-300">
-                                        <h3 className="md:text-xl text-lg font-semibold text-[#033D2D] mb-2">Dr. {item.title}</h3>
-                                        <p className="text-gray-600 md:text-base text-sm">{item.description}</p>
+                                    <div key={index} className="bg-white w-full  p-2  text-left rounded-lg ">
+                                        <h3 className="md:text-base text-base font-semibold text-[#033D2D] ">Dr. {item.title}, <span className=' text-black md:text-sm text-sm'>{item.description}</span></h3>
+                                        {/* <p className="text-gray-600 md:text-base text-sm">{item.description}</p> */}
                                     </div>
                                 ))}
                             </div>

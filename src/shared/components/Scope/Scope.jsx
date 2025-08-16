@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Marquee from 'react-fast-marquee'
 import LastSection from '../Bottom/Bottom';
+import Common from '../Common/Common';
 
 function Scope() {
     const highlights = [
@@ -45,7 +46,7 @@ function Scope() {
     return (
         <>
             <section className='bg-white/96'>
-                <section className="relative h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D] lg:block hidden" >
+                {/* <section className="relative h-[15vh] w-full overflow-hidden bg-gradient-to-r from-[#0D6743] to-[#033D2D] lg:block hidden" >
                     <img className="absolute -top-20 -left-20 2xl:block hidden" src="/assets/Images/point.png" alt="" />
                     <div className="absolute top-0 left-0 h-full w-full z-0 bg-[url('/assets/Images/Herosec.png')] opacity-20" ></div>
                 </section>
@@ -60,12 +61,14 @@ function Scope() {
                             <div className='col-span-1 xl:block hidden'>  </div>
                             <div className='flex flex-col md:gap-4 gap-2 col-span-4 md:my-10 my-5'>
                                 <div className="text-justify md:text-lg text-sm leading-7 flex flex-col gap-4">
-                                    <p className="px-3">ICSCMEA 2026 covers innovations in intelligent computational methods and their applications across AI, machine learning, data analytics, cloud computing, high-performance computing, and emerging interdisciplinary fields. The conference provides a platform for researchers and industry experts to exchange ideas, address challenges, and explore future trends. </p>
+                                    <p className="px-3">
+                                    ICSCMEA 2026 covers innovations in intelligent computational methods and their applications across AI, machine learning, data analytics, cloud computing, high-performance computing, and emerging interdisciplinary fields. The conference provides a platform for researchers and industry experts to exchange ideas, address challenges, and explore future trends. </p>
                                 </div>
                             </div>
                         </section>
                     </section>
-                </section>
+                </section> */}
+                <Common heading="Scope" content="ICSCMEA 2026 covers innovations in intelligent computational methods and their applications across AI, machine learning, data analytics, cloud computing, high-performance computing, and emerging interdisciplinary fields. The conference provides a platform for researchers and industry experts to exchange ideas, address challenges, and explore future trends." />
                 <section>
                     <div className="md:py-12 py-6 px-6 ">
                         <div className="max-w-[90rem] mx-auto text-center">

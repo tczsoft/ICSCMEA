@@ -194,7 +194,7 @@ function Submission() {
                                 </div>
                                 <div>
                                     <label htmlFor="Paper_File" className="block text-lg font-medium text-gray-700">Upload Paper</label>
-                                    <input id="Paper_File" name="Paper_File" onChange={handleFileInputChange} type="file" accept=".pdf" className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-1 focus:ring-green-600 focus:border-green-600 focus:outline-none" required />
+                                    <input id="Paper_File" name="Paper_File" onChange={handleFileInputChange} type="file" accept=".pdf" className="mt-1 block w-full px-4 py-2 border-b-2 border-[#00A63E] rounded-lg" required />
                                 </div>
                                 <div className='text-center'>
                                     <button type="submit" className="w-fit px-4 py-2 cursor-pointer bg-[#04412F] text-white font-medium rounded-full hover:bg-[#04412F]">{status === 'Sending...' ? 'Submitting...' : 'Submit Paper'}</button>

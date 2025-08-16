@@ -84,7 +84,8 @@ const Header = () => {
           <div className="flex items-center justify-between lg:gap-0  gap-5  ">
             <Link to='/'>
               <div className="md:hidden block   ">
-                <div className=" font-bold md:hidden block text-white text-2xl">ICSCMEA</div>
+                {/* <div className=" font-bold md:hidden block text-white text-2xl">ICSCMEA</div> */}
+                <img src="/images/home/logo.png" className='w-28' alt="" />
               </div>
             </Link>
             <div className={`md:hidden block cursor-pointer ${menuOpen ? "z-50" : ""}`} onClick={() => setMenuOpen(!menuOpen)}   >
@@ -101,25 +102,26 @@ const Header = () => {
           </div>
         </div>
       </section>
-      <section className={` fixed -top-1 right-0 h-full w-64 z-40 md:bg-transparent bg-[#033D2D] ${scrolled || !isHomePage ? "bg-gradient-to-r from-[#0D6743] to-[#033D2D]" : " "}  ${menuOpen ? "translate-x-0 duration-300" : "translate-x-full duration-300"} md:block md:relative md:w-auto md:translate-x-0`} >
-        <header className="max-w-[90rem] mx-auto md:px-5 px-2 h-full py-1 ">
-          <div className="flex md:justify-between justify-center items-center ">
+      <section className={`fixed -top-1 right-0 h-full w-64 z-40 lg:bg-transparent bg-[#033D2D] ${scrolled ? "bg-gradient-to-r from-[#0D6743] to-[#033D2D]" : " "}  ${menuOpen ? "translate-x-0 duration-300" : "translate-x-full duration-300"} md:block md:relative md:w-auto md:translate-x-0`} >
+        <header className="max-w-[90rem] mx-auto md:px-5 px-2 h-full py-1">
+          <div className="flex md:justify-between justify-center items-center">
             <Link to='/'>
-              <div className=" font-bold md:block hidden text-white text-2xl">ICSCMEA</div>
+              {/* <div className=" font-bold md:block hidden text-white text-2xl">ICSCMEA</div> */}
+              <img src="/images/home/logo.png" className='w-36  md:block hidden' alt="" />
             </Link>
             <nav ref={dropdownRef}>
-              <div className={`space-x-1 md:block max-w-[65rem] mx-auto  md:pt-0  pt-20  ${menuOpen ? "flex flex-col space-y-4" : ""}`}>
+              <div className={`md:space-x-8 md:block max-w-[65rem] mx-auto   md:pt-0 pt-20 ${menuOpen ? "flex flex-col space-y-4" : ""}`}>
                 {navLinks.map((link) => (
-                  <div key={link.to} className=" inline-block group relative"
+                  <div key={link.to} className="inline-block group relative"
                     onMouseEnter={() => window.innerWidth >= 768 && handleMouseEnter(link.label)}
                     onMouseLeave={() => window.innerWidth >= 768 && handleMouseLeave()}>
-                    <Link to={link.to} className={`py-4 flex lg:w-[144px] md:w-[130px] transition-all duration-300 ease-in-out lg:text-base md:text-sm justify-center items-center gap-2 text-white ${isActive(link.to) || hoveredCategory === link.label ? 'md:border-t-0 border-t-[#14AE5C] duration-300 text-[#1B1F3B]' : ''} `}
+                    <Link to={link.to} className={`py-4 flex    transition-all duration-300 ease-in-out lg:text-base md:text-sm justify-center items-center gap-1 text-white ${isActive(link.to) || hoveredCategory === link.label ? 'md:border-t-0 border-t-[#14AE5C] duration-300 text-[#1B1F3B]' : ''} `}
                       onClick={(e) => { if (link.dropdown) { e.preventDefault(); setHoveredCategory((prev) => (prev === link.label ? null : link.label)); } else { setMenuOpen(false); } }}   >
                       {link.label}
                       {link.dropdown && (<i className={`fi fi-rr-angle-small-down flex items-center  transition-all duration-300 ease-in-out  rounded-full text-white ${isActive(link.to) || hoveredCategory === link.label ? 'bg-[#14AE5C] text-white rotate-180 duration-100' : ' '} `}></i>)}
                     </Link>
                     {hoveredCategory === link.label && link.dropdown && (
-                      <div className="md:absolute left-0 top-full md:w-[260px] rounded-lg md:bg-[#56AE58] bg-white  transition-all duration-300 ease-in-out opacity-100 scale-y-100 origin-top  grid md:grid-cols-1 md:p-3 z-10">
+                      <div className="md:absolute left-0 top-full md:w-[260px] rounded-lg md:bg-[#56AE58] bg-white transition-all duration-300 ease-in-out opacity-100 scale-y-100 origin-top  grid md:grid-cols-1 md:p-3 z-10">
                         {link.dropdown.map((dropdownlink) => (
                           <Link key={dropdownlink.to} to={dropdownlink.to} className="block md:px-4 px-4 py-2 md:text-white md:text-start text-center  text-[#1B1F3B]" onClick={() => { setHoveredCategory(null); setMenuOpen(false); }} >
                             {dropdownlink.label}

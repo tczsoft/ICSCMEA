@@ -18,7 +18,7 @@ function Contact() {
             formDataToSend.append('email', formData.email);
             formDataToSend.append('number', formData.number);
             formDataToSend.append('message', formData.message);
-            const response = await fetch('http://icscmea.com/api/message_mail.php', { method: 'POST', body: formDataToSend, });
+            const response = await fetch('https://icscmea.com/api/message_mail.php', { method: 'POST', body: formDataToSend, });
             if (response.ok) { const result = await response.text(); setStatus(result); setFormData({ firstname: '', email: '', number: '', message: '', }); toast.success("submitted successfully!"); console.log("success") } else { setStatus('Failed to send submission. Please try again.'); toast.error('Failed to send submission. Please try again.'); }
         } catch (error) { console.error('Error:', error); setStatus('An error occurred. Please try again.'); toast.error('An error occurred. Please try again.'); }
     };

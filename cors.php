@@ -3,7 +3,7 @@
 
 $allowed_origins = [
     "http://192.168.29.85",
-    "http://icscmea.com"
+    "https://icscmea.com"
     // "https://icngths.com"
 ];
 

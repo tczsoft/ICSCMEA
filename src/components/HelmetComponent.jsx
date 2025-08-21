@@ -14,10 +14,10 @@ function HelmetComponent({ title, canonical }) {
             <meta property="og:type" content="website" />
             <meta property="og:title" content="International Conference on Smart Computational Methods and Emerging Applications (ICSCMEA)" />
             <meta property="og:description" content="Join ICSCMEA 2026 to explore smart computational methods, innovative applications, and future technologies through keynote talks, technical sessions, and collaborative discussions." />
-            <meta property="og:url" content="https://icscmea-conference.org" />
-            <meta property="og:image" content="https://icscmea-conference.org/assets/images/ICSCMEA-White.png" />
+            <meta property="og:url" content="http://www.icscmea.com" />
+            <meta property="og:image" content="http://www.icscmea.com/images/home/logo.png" />
             <link rel="canonical" href={canonical} />
-            <link rel="icon" type="image/png" href="https://icscmea-conference.org/assets/images/ICSCMEA-Fav.png" />
+            <link rel="icon" type="image/png" href="http://www.icscmea.com/images/home/fav.png" />
         </Helmet>
 
     );

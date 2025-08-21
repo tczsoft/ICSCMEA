@@ -10,7 +10,7 @@ function LastSection() {
                         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 items-center text-white'>
                             <div className="bg-[#033D2D] md:p-10 p-5 w-full h-full transform flex items-center justify-center rounded-xl relative">
                                 <div className="md:p-3 p-2 bg-[#4AF8BA] w-fit   absolute -top-2 left-10  rounded-tr-xl rounded-b-4xl">
-                                    <div className="p-1 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-2"> </div>        
+                                    <div className="p-1 rounded-t-full bg-[#02c07d] top-0 absolute z-20 -left-2"> </div>
                                     <div className="p-1 z-10 rounded-tl-xl bg-[#4AF8BA] top-0 absolute -left-2">
                                     </div>
                                     <i class="fi fi-ss-marker text-[#033D2D] flex items-center md:text-base text-xs"></i>
@@ -38,7 +38,7 @@ function LastSection() {
                                     <i class="fi fi-sr-envelope text-[#033D2D] flex items-center md:text-base text-xs"></i>
                                 </div>
                                 <div className="flex flex-col gap-5">
-                                    <p className="xl:text-2xl  text-center">info.iciscm@gmail.com
+                                    <p className="xl:text-2xl  text-center">info.icscmea@gmail.com
                                     </p>
                                 </div>
                             </div>

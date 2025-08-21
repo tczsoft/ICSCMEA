@@ -56,7 +56,7 @@ function Submission() {
             googleSheetsParams.append('Email_Address', formData.Email_Address);
             googleSheetsParams.append('Institution_Name', formData.Institution_Name);
             googleSheetsParams.append('Paper_Track', formData.Paper_Track);
-            const mailPromise = fetch('http://icscmea.com/api/send_mail.php', {
+            const mailPromise = fetch('https://icscmea.com/api/send_mail.php', {
                 method: 'POST',
                 body: formDataToSend,
             });
